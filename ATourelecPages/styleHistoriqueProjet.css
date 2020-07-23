@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 body{
-    background: #edf1f7;
+    background: #347AB7;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -15,7 +16,7 @@ body{
 }
 :root{
     --primary-color: #317ec7;
-    --secondary-color: #edf1f7;
+    --secondary-color: #5C95CB;
     --max-width: 1100px;
 }
 
@@ -25,44 +26,97 @@ h1,h2,h3,h4{
     margin:0;
 }
 .container{
-    width: 100%;
+    width: 95%;
     height: 100%;
-    background: #fff;
+    background: #317ec7;
     margin: 0 auto;
 }
 
 .showcase{
-    background: #333;
+    background: #fff;
     color: #fff;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
    
 }
 .showcase::before{
     content: '';
-    background: url(./img/projetHistorique.jpg) no-repeat center center/cover;
+    background: url(./img/clockHistory.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
-    opacity: 0.7;
+    height: 65vh;
+    opacity: 1;
     transition: all 0.3s ease;
 }
 
 .showcase .showcase-container{
-    position: absolute;
-    top: 400px;
-    left: 750px;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     display: flex;
-    width: 20%;
-    height: 20%;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
     align-items: center;
     margin: 0 auto;
-    background: rgba(0,0, 0, 0.7);
+  
+}
+
+.showcase .showcase-container .showcase-content{
+    padding: 1rem 2rem;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px #999, -2px -2px 2px #999;
+    background: #5C95CB;
+    /* background: rgb(214, 211, 211); */
+    margin-left: 1rem;
+
+
+}
+
+.showcase .showcase-container .showcase-content h3{
+    background: #317ec7;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s ease-in;
+    width: 50%;
+    padding:0 0.2rem;
+}
+.showcase .showcase-container .showcase-content h3:hover{
+    background: #c4302b;
+}
+
+.showcase .showcase-container .showcase-content div{
+margin-top: 0.7rem;
+margin-left: 2rem;
+width:80%;
+}
+.showcase .showcase-container .showcase-content a{
+    width: 100%;
+    text-align: end;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.showcase .showcase-container .showcase-content a:hover{
+    color: #f6f6f6;
+}
+
+.speech-paragraph{
+    background: #f6f6f6;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
 }
 
 .showcase .showcase-container i{
@@ -71,11 +125,11 @@ h1,h2,h3,h4{
 }
 
 /*timeline*/
-#timeline{
-    margin-top: 4rem;
-}
+/* #timeline{
+
+} */
 #timeline ul{
-    background: var(--primary-color);
+    background: #E4EAF3;
     padding: 50px 0;
 }
 
@@ -86,7 +140,7 @@ h1,h2,h3,h4{
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
-    background: #fff;
+    background: #f6f6f6;
 }
 
 /* Boxes*/
@@ -95,9 +149,10 @@ h1,h2,h3,h4{
     bottom: 0;
     width: 400px;
     padding: 1rem;
-    background: var(--secondary-color);
+    background: #317ec7;
     transition: all 1s ease-in-out;
     visibility: hidden;
+    color: #fff;
     opacity: 0;
 
 }
@@ -123,7 +178,7 @@ h1,h2,h3,h4{
     bottom: 0;
     width: 25px;
     height: 25px;
-    background: var(--secondary-color);
+    background:#317ec7;
     transform: translateX(-50%);
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
@@ -144,13 +199,13 @@ h1,h2,h3,h4{
 #timeline ul li:nth-child(odd) div:after{
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent var(--secondary-color) transparent transparent;
+    border-color: transparent #317ec7 transparent transparent;
 }
 /*Left Side Arrows*/
 #timeline ul li:nth-child(even) div:after{
     right: -15px;
     border-width: 8px 0px 8px 16px;
-    border-color:transparent transparent transparent  var(--secondary-color);
+    border-color:transparent transparent transparent  #317ec7;
 }
 
 #timeline ul li.show div{
@@ -188,6 +243,10 @@ h1,h2,h3,h4{
     #main-header .container > h3{
         text-shadow: 0.4rem 0.3rem 0.7rem black;
 
+    }
+
+    .showcase .showcase-container .showcase-content{
+        display: none;
     }
 
 }

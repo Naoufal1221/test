@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #347AB7;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding-bottom: 1rem ;
+}
+.links{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5C95CB;
+}
+.links a{
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-right: #fff 1px solid;
+    padding-right: 1rem;
+    transform: translate(0,0);
+    transition: transform 0.3s ease-in-out;
+}
+.links a:last-child{
+    border-right: none;
+}
+.links .active{
+    color: #c4302b;
+}
+.links a:hover{
+    transform: translate(0,-5px);
+}
+
+.showcase{
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 20vh;
+   
+}
+.showcase::before{
+    content: '';
+    background: url(./img/contactImage.jpeg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    opacity: 0.7;
+    
+}
+
+ .showcase .showcase-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+ }
+
+ .showcase .showcase-container .showcase-content{
+     width: 30%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease;
+    
+ }
+
+ .showcase .showcase-container .showcase-content h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+ }
+
+ .showcase .showcase-container .showcase-content h1:hover{
+    color: #c4302b;
+    font-size: 2rem;
+ }
+
+
+ .showcase + h2{
+     text-align: center;
+     color: #333;
+     transform: translate(0,0);
+     transition: all 0.3s ease;
+ }
+
+ .showcase + h2:hover{
+     transform: translate(5px ,0);
+     color: #c4302b;
+ }
+
+
+
+
+ .line{
+     width: 100px;   
+     height: 5px;
+     background: #347AB7;
+     margin: 0.5rem auto;
+     border-radius: 1px;
+ }
+
+
+ .Side-menu{
+     display: flex;
+     justify-content: space-between;
+     margin: 1rem 0;
+ }
+
+ .Side-menu .left-side-menu{
+     margin-top: 3rem;
+     padding: 0 1rem;
+ }
+
+ .Side-menu .left-side-menu .box-review{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    transform: translate(0,0);
+    transition: all 0.3s ease;
+ }
+ .Side-menu .left-side-menu .box-review:hover{
+     transform: translate(5px,0);
+     background: #edf1f7;
+ }
+
+ .Side-menu .left-side-menu .box-review h4{
+     align-self: flex-start;
+     margin: 0 0.4rem;
+     color: #333;
+     transition: all 0.3s ease;
+ }
+
+ .Side-menu .left-side-menu .box-review .col-red{
+     color: #c4302b;
+     font-weight: bold;
+ }
+
+ .Side-menu .left-side-menu .box-review .col-blue{
+     color: #347AB7;
+     font-weight: bold;
+ }
+ .Side-menu .left-side-menu .box-review .line-inner{
+     width: 50px;
+     height: 5px;
+     background: #347AB7;
+     margin-left: 0.6rem;
+     border-radius: 1px;
+     margin-bottom: 1rem;
+
+ }
+
+
+ .Side-menu .left-side-menu .box-review p{
+     padding-left: 2rem;
+ }
+
+
+ .Side-menu .left-side-menu .box-review h4:hover{
+     color: #c4302b;
+ }
+.Side-menu .right-side-menu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.5rem;
+    padding:  1rem;
+    border-left: #edf1f7 2px solid;
+}
+ .Side-menu .right-side-menu img{
+     width: 400px;
+     height: 100%;
+ }
+
+
+ /*Responsive*/
+
+ @media(max-width:1541px)
+ {
+    .Side-menu .right-side-menu {
+       grid-template-columns: 1fr;
+    }
+ }
+
+ @media(max-width:600px){
+
+    .Side-menu{
+        flex-direction: column;
+    }
+    .Side-menu .right-side-menu{
+        display: flex;
+        flex-direction:column ;
+        justify-content:center ;
+        align-items: center;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .links a{
+        border-right: none;
+        padding-bottom: 1rem;
+        border-bottom: #fff 1px solid;
+
+    }
+
+    .links a:hover{
+        transform: translate(-5px,0);
+    }
+ }

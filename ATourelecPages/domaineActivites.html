@@ -4,124 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="styleActivites.css">
   
     <title>Tourelec | Domaine d'activités</title>
 </head>
 <body>
+      <!-- navbar -->
+      <header id="main-header">
+        <div class="container-header">
+            <a href="#" class="left-side">
+                <img src="./img/logo.png" alt="">
+            </a>
+
+            <section class="right-side">
+                <!-- icon Section -->
+                <div class="social-icons">
+                    <a  class="link-item" href="#">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </a>
+                    <a  class="link-item" href="#">
+                        <i class="fab fa-youtube fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-facebook-f fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-instagram fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-linkedin-in fa-1x"></i>
+                    </a>
+                </div>
+                <!-- icon Section -->
+                <!-- languages -->
+                <div class="languages">
+                    <select name="langages" id="lang">
+                        <option value="Francais">Fr</option>
+                        <option value="Anglais">An</option>
+                    </select>
+                </div>
+                <!--  -->
+                <!-- Hamburger menu -->
+                <h4>M E N U</h4>
+                <div class="hamburger-menu">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                <!--  -->
+            </section>
+            <!-- Menu Setting -->
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <!-- first linked item -->
+                    
+                    <li class="nav-item sous-list">
+                        <a id="first" href="#">Emploie et Carriere</a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                    <a class="link-item" href="Presentation.html">
+                                        Page De presentation  
+                                    </a>
+                            </li>
+                            <li>
+                                    <a class="link-item" href="Candidature.html">
+                                       Formulaire de candidature
+                                    </a>
+                             </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!-- second linked item -->
+                    <li class="nav-item ">
+                        <a href="#">
+                            Actualité
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            Mentons légales
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            Condition generales d'utilisation
+                        </a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item sous-list">
+                        <a  id="second" href="chiffreCles.html" >chiffre-clés</a>
+                        <div class="invisible-line"></div>
+                         <ul class="inner-item">
+                             <li>
+                                 <a  class="link-item " href="#">Réalisation financiers</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <!--  -->
+                    <li class="nav-item sous-list">
+                        <a id="third" href="#">International</a> 
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item" href="Presentation.html">Page de presentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sous-list">
+                       <a id="fourth" href="#"> Qualité</a>
+                       <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item " href="#">Assurance qualité</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="#">Controle qualité</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!--third linked list  -->
+                 
+                    <!--  -->
+                
+                    <li class="nav-item sous-list">
+                        <a id="fiveth" href="#">Que faisons-nous</a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item " href="domaineActivites.html">Nos domaines d'activité</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="NosMarques.html">Nos marques</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="ProjetRealiser.html">Nos réalisations</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item sous-list">
+                        <a  id="last" href="#">Qui-somme nous </a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li >
+                                <a class="link-item " href="Presentation.html">Président fondateur</a>
+                            </li>
+                            <li>
+                                <a class="link-item" href="historiqueProjet.html">Historique</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="#">Valeurs et engagements</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="">Citoyenneté</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="Distinction.html">Distinction</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+    <!--  -->
     <div class="container">
+        <div class="links">
+            <a href="domaineActivites.html" class="navs active">Domaine d'activités</a>
+            <a href="NosMarques.html" class="navs">Nos Marques</a>
+            <a href="ProjetRealiser.html" class="navs">Nos Réalisations</a>
+        </div>
         <div class="showcase">
-            <div class="showcase-content">
-                <span> TOURELEC</span>
-                <h1>Nos Moyens Humains et Techniques et Matériels </h1>
+            <div class="showcase-container">
+                <div class="showcase-content">
+                    <span>NOS DOMAINES D'ACTIVITÉS ET PRÉSENCE EN AFRIQUE</span>
+                </div>
             </div>
+           
         </div>
-        <div class="sponsors">
-            <img src="./img/sarmelImage.jpg" alt="" srcset="">
-            <img src="./img/lightingImage.jpg" alt="" srcset="">
-            <img src="./img/selecnaImage.jpg" alt="" srcset="">
-            <img src="./img/tourelecImage.jpg" alt="" srcset="">
-            <img src="./img/designImage.jpg" alt="" srcset="">
+        <h2>Nos Activités</h2>
+        <div class="line"></div>
+        <div class="activities">
+          <a href="Courants.html" class="box">
+            <div>
+              <i class="fas fa-long-arrow-alt-up fa-3x"></i>
+              <i class="fas fa-long-arrow-alt-down fa-3x"></i>
+            </div>
+              <h4>Courant Fort / Courant Faible</h4>
+          </a>
+          <a href="climatisationPlomberie.html" class="box">
+            <i class="fas fa-fan fa-3x"></i>
+            <h4>Climatisation / Plomberie</h4>
+          </a>
+          <a href="TransportEnergie.html" class="box">
+            <i class="fas fa-solar-panel fa-3x"></i>
+            <h4>Transport d'Energie</h4>
+          </a>
+          <a href="TableauElectrique.html" class="box">
+            <i class="fas fa-bolt fa-3x"></i>
+            <h4>Tableau Electriques</h4>
+          </a>
+          <a href="EnergieRenouvelable.html" class="box">
+            <i class="fas fa-redo-alt fa-3x"></i>
+              <h4>Energie Renouvelable</h4>
+          </a>
+          <a href="Maintenance.html" class="box">
+            <i class="fas fa-chart-line fa-3x"></i>
+              <h4>Maintenance</h4>
+          </a>
         </div>
-        <h2>Nos Moyens Techniques et Matériels</h2>
-       <div class="Sides">
-           <div class="left-box">
-               <span class="topic">TOURELEC met à la disposition de ses clients l’ensemble de ses ressources, à savoir :</span>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Des Bureaux de proximité</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Des Ateliers de Travaux électriques et électroniques</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Des Ateliers de Fabrication</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Des Entrepôts de stockage de plus de 25.000m²</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Des Ateliers de Câblage</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Plus d’une Cinquantaine de Véhicules de Transport.</span>
-               </div>
-                <div class="sentence">
-                    <i class="fas fa-star"></i>
-                    <span>Un Nombre Important de Matériel de Terrassement.</span>
-               </div>
-               <div class="sentence">
-                <i class="fas fa-star"></i>
-                <span>Un Outillage complet et adapté à tous les besoins d’un Chantier.</span>
-           </div>
-           <!--  -->
-            <div class="sentence">
-                <i class="fas fa-star"></i>
-                <span>Tracteurs à pelles et bétonnières mobiles</span>
+
+          <h2>Notre Présense en Afrique</h2>
+          <div class="line"></div>
+          <div class="Side">
+            <div>
+              <p>Lorem ipsum dolor, sit amet
+                 consectetur adipisicing elit. Nam 
+                 inventore quas eius culpa fugiat dolorum.
+                  Deserunt, eos! Quas esse explicabo quia,
+                   placeat architecto qui maxime, voluptas eos
+                    neque unde libero iste ea delectus 
+                autem aut voluptatum odit illo iure molestiae?</p>
             </div>
-            <!--  -->
-            <div class="sentence">
-                <i class="fas fa-star"></i>
-                <span>Des Bureaux de proximité</span>
-            </div>
-           </div>
-           <!--  -->
-           <div class="right-box">
-              <table>
-                <thead>
-                    <tr>
-                      <th>Personel</th>
-                      <th>Nombre</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Nombres de Cadres</td>
-                      <td>20</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Dont</td>
-                      <td>18 ingénieurs</td>
-                      
-                    </tr>
-                    <tr>
-                      <td>Chargés d&#39;affaire</td>
-                      <td>13</td>
-                    </tr>
-                    <tr>
-                      <td>Chefs de Chantier</td>
-                      <td>24</td>
-                    </tr>
-                    <tr>
-                      <td>Conducteurs de travaux</td>
-                      <td>8</td>
-                    </tr>
-                    <tr>
-                      <td>Techniciens</td>
-                      <td>32</td>
-                    </tr>
-                    <tr>
-                      <td>Dont</td>
-                      <td>12 spécialisés</td>
-                    </tr>
-                    <tr>
-                      <td>Nombre de Salariés</td>
-                      <td>Plus de 490</td>
-                    </tr>
-                    <tr>
-                      <td>Moyenne d&#39;âge</td>
-                      <td>30 ans</td>
-                    </tr>
-                  </tbody>
-              </table>
-           </div>
-       </div>
+            <img src="./img/map.PNG" alt="" srcset="">
+        
+          </div>
 
        <div class="statistics">
            <div class="stats">
@@ -138,5 +254,46 @@
            </div>
        </div>
     </div>
+    <footer id="main-footer" class="py-2">
+      <div class="contaiiner footer-container">
+          <div>
+              <img src="img/logo.png" alt="NewsGrid">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Provident sequi modi consequuntur? 
+                  Minus error magnam debitis ullam, saepe repudiandae magni!</p>
+          </div>
+          <!--  -->
+          <div>
+              <h3 class="footer-title">Contactez nous</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <form >
+                  <input type="email" placeholder="Enter Email...">
+                  <input type="submit" value="Subscribe" class="btn-footer">
+              </form>
+          </div>
+          <!--  -->
+          <div>
+              <h3 class="footer-title">References</h3>
+              <ul class="list">
+                  <li><a href="#">Help & Support</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <!--  -->
+          <div>
+              <h2 class="footer-title">Rejoignez-nous</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, reiciendis?</p>
+              <a href="#" class="btn-footer btn-secondary m-1">Join Now</a>
+          </div>
+          <!--  -->
+          <div>
+              <p class="col-white">Copyright &copy; 2020, All Rights Reserved</p>
+          </div>
+      </div>
+  
+  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
