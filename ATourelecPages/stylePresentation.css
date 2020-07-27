@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body{
     background: #347AB7;
@@ -35,6 +38,7 @@ h1,h2,h3,h4{
     padding-right: 1rem;
     transform: translate(0,0);
     transition: transform 0.3s ease-in-out;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .links a:last-child{
     border-right: none;
@@ -85,6 +89,21 @@ h1,h2,h3,h4{
      align-items: center;
      justify-content: center;
  }
+
+ .showcase .showcase-container .showcase-content h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    animation: topic 1s forwards ease;
+ }
+ @keyframes topic{
+     from{
+         transform: translate(0,-20px);
+     }
+     to{
+         transform: translate(0,0);
+     }
+ }
  .showcase +i{
      color: #5C95CB;
      margin-left: 2rem;
@@ -103,6 +122,12 @@ h1,h2,h3,h4{
     text-align: start;
     padding: 0.5rem 0.8rem;
     margin: 0 auto;
+    font-family: 'Amiri', serif;
+    font-style: italic;
+ }
+
+ .speech p {
+     font-size: 1.2rem;
  }
 
  .speech span{
@@ -161,7 +186,9 @@ h1,h2,h3,h4{
      border-left: #c4302b 7px solid;
      background: #5C9CD8;
      color: #fff;
-     font-weight: bold;
+     font-weight: 400;
+     font-size: 20px;
+     font-family: 'Teko', sans-serif;
  }
 
 
