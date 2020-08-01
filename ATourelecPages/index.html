@@ -3,40 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourelec | Index</title>
+    <title>Tourelec | Acceuil</title>
+    <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styleAcceuil.css">
+
 </head>
-<style>
-    .buttons{
-        width: 50%;
-        height: 50vh;
-        background: #e3e3e3;
-        margin: 7rem auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 1rem;
-        padding: 3rem 4rem;
-    }
 
-    .btn{
-        text-decoration: none;
-        color: #fff;
-        background: #333;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-</style>
 <body>
-    <div class="buttons">
-        <a href="Candidature.html" class="btn">Candidature</a>
-        <a href="Contact.html" class="btn">Contact</a>
-        <a href="domaineActivites.html" class="btn">domaine d'activités</a>
-        <a href="historiqueProjet.html" class="btn">Historiques</a>
-        <a href="NosMarques.html" class="btn">Filiales</a>
-        <a href="plomberie.html" class="btn">Plomberie</a>
-        <a href="Presentation.html" class="btn">Presentation</a>
+     <!-- navbar -->
+     <header id="main-header">
+        <div class="container-header">
+            <a href="index.html" class="left-side">
+                <img src="./img/logo.png" alt="">
+            </a>
+
+            <section class="right-side">
+                <!-- icon Section -->
+                <div class="social-icons">
+                    <a  class="link-item" href="#">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </a>
+                    <a  class="link-item" href="#">
+                        <i class="fab fa-youtube fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-facebook-f fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-instagram fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="#">
+                        <i class="fab fa-linkedin-in fa-1x"></i>
+                    </a>
+                </div>
+                <!-- icon Section -->
+                <!-- languages -->
+                <div class="languages">
+                    <select name="langages" id="lang">
+                        <option value="Francais">Fr</option>
+                        <option value="Anglais">An</option>
+                    </select>
+                </div>
+                <!--  -->
+                <!-- Hamburger menu -->
+                <h4>M E N U</h4>
+                <div class="hamburger-menu">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                <!--  -->
+            </section>
+            <!-- Menu Setting -->
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <!-- first linked item -->
+                    
+                    <li class="nav-item sous-list">
+                        <a id="first" href="#">Emploie et Carriere</a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                    <a class="link-item" href="Presentation.html">
+                                        Page De presentation  
+                                    </a>
+                            </li>
+                            <li>
+                                    <a class="link-item" href="Candidature.html">
+                                       Formulaire de candidature
+                                    </a>
+                             </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!-- second linked item -->
+                    <li class="nav-item ">
+                        <a href="#">
+                            Actualité
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            Mentons légales
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            Condition generales d'utilisation
+                        </a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item sous-list">
+                        <a  id="second" href="chiffreCles.html" >chiffre-clés</a>
+                        <div class="invisible-line"></div>
+                         <ul class="inner-item">
+                             <li>
+                                 <a  class="link-item " href="#">Réalisation financiers</a>
+                             </li>
+                         </ul>
+                     </li>
+                    <!--  -->
+                    <li class="nav-item sous-list">
+                        <a id="third" href="#">International</a> 
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item" href="Presentation.html">Page de presentation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item sous-list">
+                       <a id="fourth" href="#"> Qualité</a>
+                       <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item " href="#">Assurance qualité</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="#">Controle qualité</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <!--third linked list  -->
+                 
+                    <!--  -->
+                
+                    <li class="nav-item sous-list">
+                        <a id="fiveth" href="#">Que faisons-nous</a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item " href="domaineActivites.html">Nos domaines d'activité</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="NosMarques.html">Nos marques</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="ProjetRealiser.html">Nos réalisations</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item sous-list">
+                        <a  id="last" href="#">Qui-somme nous </a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li >
+                                <a class="link-item " href="Presentation.html">Président fondateur</a>
+                            </li>
+                            <li>
+                                <a class="link-item" href="historiqueProjet.html">Historique</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="#">Valeurs et engagements</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="">Citoyenneté</a>
+                            </li>
+                            <li>
+                                <a class="link-item " href="Distinction.html">Distinction</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+           
         </div>
+    </header>
+    <div class="container">
+        <div class="blackscreen"></div>
+        <video id="vid" src="./img/vid1.mp4" autoplay="autoplay"></video>
+        <div class="blackscreen"></div>
+        <div class="boxes">
+            <div class="box">
+                <i class="fas fa-globe fa-3x"></i>
+                <h4>International</h4>
+            </div>
+            <div class="box">
+                <i class="fab fa-wpexplorer fa-3x"></i>
+                <h4>Nos Domaines</h4>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe fa-3x"></i>
+                <h4>Nos marques</h4>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe fa-3x"></i>
+                <h4>International</h4>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe fa-3x"></i>
+                <h4>International</h4>
+            </div>
+        </div>
+
+        <div class="global-box">
+            <div class="global-left-box">
+                <h4>ACTUALITÉS</h4>
+                <div class="left-box">
+                    <h5>ÉVÉNEMENT</h5>
+                    <h4>Tous unis contre le COVID-19</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Incidunt est id quia quasi eum sit, 
+                        adipisci cumque fugit velit facere...
+                    </p>
+                    <div>
+                        <p>1 aout 2020</p>
+                        <a href="#">Lire l'article</a>
+                    </div>
+                </div>
+                <div class="left-box">
+                    <h5>ÉVÉNEMENT</h5>
+                    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Incidunt est id quia quasi eum sit, 
+                        adipisci cumque fugit velit facere...
+                    </p>
+                         <div>
+                            <p>1 aout 2020</p>
+                            <a href="#">Lire l'article</a>
+                        </div>
+
+                </div>
+            </div>
+            <div class="global-right-box">
+                <h4>NOUVEAUTÉS</h4>
+                    <div class="right-box">
+                        <h5>ÉVÉNEMENT</h5>
+                    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Incidunt est id quia quasi eum sit, 
+                        adipisci cumque fugit velit facere...
+                    </p>
+                         <div>
+                            <p>1 aout 2020</p>
+                            <a href="#">Lire l'article</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <footer id="main-footer" class="py-2">
+        <div class="footer-container">
+    
+            <!--  -->
+            <div>
+                <p class="col-white">Copyright &copy; 2020 TOURELEC</p>
+            </div>
+    
+            <div>
+                <a href="#">
+                    <p>MENTIONS LÉGALES & CGU</p>
+                </a>
+            </div>
+        </div>
+    
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -172,6 +172,12 @@ lastSousList.addEventListener('mouseleave',function(){
   setTimeout(function(){lastInner.style.opacity=0;},200);
 });
 
+const vidAcceuil = document.getElementById('vid');
+
+vidAcceuil.addEventListener('click',function(){
+  vidAcceuil.pause();
+})
+
 
 
 

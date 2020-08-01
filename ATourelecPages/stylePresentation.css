@@ -91,8 +91,8 @@ h1,h2,h3,h4{
  }
 
  .showcase .showcase-container .showcase-content h4{
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     font-size: 3rem;
     animation: topic 1s forwards ease;
  }

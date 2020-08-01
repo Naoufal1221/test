@@ -89,7 +89,11 @@ body{
  }
 
  .showcase .showcase-container .showcase-content h1{
-    transition: all 0.3s ease;
+    animation: anim 1s forwards ease;
+ }
+ @keyframes anim{
+     from{transform: translate(0,-10px);}
+     to{transform: translate(0,0);}
  }
 
 
@@ -115,14 +119,15 @@ body{
      flex-direction: column;
      padding: 1rem 3rem;
  }
+ .box-container .speech h3{animation: anim 1s forwards ease;}
  .box-container .speech p:last-child{
-     font-weight: bold;
+     
      margin-top: 1rem ;
      padding: 0 1.5rem;
  }
  .box-container .speech span{
-     font-weight: bold;
-     font-size: 1.4rem;
+     font-weight: 700;
+     font-size: 1.1rem;
      padding-left: 1rem;
      color: #5C95CB;
      font-family: 'Lato', sans-serif ;
@@ -136,7 +141,11 @@ body{
  }
  .box-container .speech .global-content:hover{
      transform: translate(5px,0);
-     background: #f6f6f6;
+     /* background: #f6f6f6; */
+ }
+ box-container .speech .global-content h4{
+     font-style: italic;
+
  }
 
  .box-container .speech .global-content i{
@@ -145,6 +154,7 @@ body{
      align-self: center;
      transition: all 0.3s ease;
  }
+
  .box-container .speech .global-content i:hover{
     color: #c4302b;
  }

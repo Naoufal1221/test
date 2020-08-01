@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #347AB7;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Utility*/
+.mb-1{margin-bottom: 1rem;}
+.mb-2{margin-bottom: 2rem;}
+.mb-half{margin-bottom: 0.3rem;}
+.ml-2{margin-left: 2rem;}
+.ml-half{margin-left: 0.7rem;}
+
+
+.container{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding-bottom: 1rem ;
+}
+
+.container .box-container{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    /* background: coral; */
+    animation: anim 1s forwards ease; 
+}
+
+.container .box-container h4{
+    color: #347AB7;
+    margin-bottom: 1rem;
+    animation: anim 1s forwards ease; 
+}
+@keyframes anim{
+    from{transform: translate(0,12px);}
+    to{transform: translate(0,0);}
+}
+
+.container .box-container span{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.container .box-container h1{margin-bottom: 1rem;}
+
+
