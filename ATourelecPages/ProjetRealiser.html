@@ -180,11 +180,11 @@
 
 <div class="container">
     <div class="links">
-        <a href="" >Président fondateur</a>
-        <a href="" >Historique</a>
-        <a href="" >Valeurs et engagements</a>
-        <a href="" >Citoyenneté</a>
-        <a href="" >Distinction</a>
+        <a href="Presentation.html" >Président fondateur</a>
+        <a href="historiqueProjet.html" >Historique</a>
+        <a href="#" >Valeurs et engagements</a>
+        <a href="#" >Citoyenneté</a>
+        <a href="Distinction.html" >Distinction</a>
     </div>
     <div class="showcase">
         <div class="showcase-container">
@@ -197,210 +197,941 @@
     <div class="black-box"></div>
     <h2>Nos References</h2>
     <div></div>
-    <div class="buttons">
-        <a href="#" class="btn">Voir tout</a>
-        <a href="#" class="btn">Tertiaire et Administratif</a>
-        <a href="#" class="btn">Transport d'energie</a>
-        <a href="#" class="btn">Industriel</a>
-        <a href="#" class="btn">Hospitalier et Pharmaceutique</a>
-        <a href="#" class="btn">Infrastructures</a>
-        <a href="#" class="btn">Data Center</a>
-        <a href="#" class="btn">Hotelier</a>
-        <a href="#" class="btn">Residentiel</a>
-        <a href="#" class="btn">Solaire</a>
-        <a href="#" class="btn">Maintenance</a>
+    <div class="filtres">
+        <div class="filtre">
+            <h4>Par Marché :</h4>
+            <select name="" id="mySelectMarket">
+                <option value="Privé">Privé</option>
+                <option value="Publique">Publique</option>
+                <option value="Semi-Publique">Semi-Publique</option>
+              
+            </select>
+            <a href="#" id="filtreByMarket" class="btn">Filtrer</a>
+        </div>
+        <!--  -->
+        <div class="filtre">
+            <h4>Par Année :</h4>
+            <select name="" id="mySelectYear">
+                <option value="2006">2006</option>
+                <option value="2008">2008</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+            </select>
+            <a href="#" id="filtreByYear" class="btn">Filtrer</a>
+        </div>
+        <!--  -->
+        <div class="filtre">
+            <h4>Par Activités : </h4>
+            <select name="" id="mySelectActivity">
+                <option value="Voir tout">Voir tout</option>
+                <option value="Banque">Banque</option>
+                <option value="Eclairage et Distribution">Eclairage et Distribution</option>
+                <option value="Hotel">Hotel</option>
+                <option value="Immobiliére">Immobiliére</option>
+                <option value="Centre Commerciale / Hotel">Centre Commerciale / Hotel</option>
+                <option value="Tribunal">Tribunal</option>
+                <option value="Parc d'attraction">Parc d'attraction</option>
+                <option value="Centre Commerciale">Centre Commerciale</option>
+                <option value="Aéroport">Aéroport</option>
+                <option value="Gare">Gare</option>
+            </select>
+            <a href="#" id="filtrer" class="btn">Filtrer</a>
+        </div>
     </div>
+
+    
     <div></div>
     <div class="projects">
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+        <div class="project p-2014 m-Privé">
+                <img src="./img/projets/agenceBancairephoto.jpg" alt="">
+            <div class="right-side">
+                <div class="title-project">
+                    <i class="fas fa-project-diagram fa-2x"></i>
+                    <h4>Agence Bancaire</h4>
+                </div>
+                <div class="line"></div>
+                <h5>Description :</h5>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Cum, eos? Dolore cum, 
+                     necessitatibus autem, minima excepturi facere eos
+                      sit labore error impedit iste inventore, nobis deleniti
+                       adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+                        incidunt reprehenderit autem vel iste sed. Sunt, labore
+                         nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+                </p>
+
+
+                    <div class="infos">
+                        <div class="info">
+                            <i class="far fa-calendar-alt fa-2x"></i>
+                            <div>
+                                <h4>Année</h4>
+                                <p>2014</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="info">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                            <div>
+                                <h4>Activité</h4>
+                                <p>Banque</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="info">
+                            <i class="fas fa-ad fa-2x"></i>
+                            <div>
+                                <h4>Marché</h4>
+                                <p>Privé</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="info">
+                            <i class="fas fa-hourglass fa-2x"></i>
+                            <div>
+                                <h4>Durée</h4>
+                                <p>9 mois</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="info">
+                            <i class="fas fa-dollar-sign fa-2x"></i>
+                            <div>
+                                <h4>Budget</h4>
+                                <p>13.2 M DHS/TTC, 1.25M €</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- projet 2 -->
+        <div class="project p-2006 m-Semi-Publique">
+            <img src="./img/projets/aeroport.jpg" alt="">
+        <div class="right-side">
+            <div class="title-project">
+                <i class="fas fa-project-diagram fa-2x"></i>
+                <h4>Aéroport Marrakech</h4>
+            </div>
+            <div class="line"></div>
+            <h5>Description :</h5>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Cum, eos? Dolore cum, 
+                 necessitatibus autem, minima excepturi facere eos
+                  sit labore error impedit iste inventore, nobis deleniti
+                   adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+                    incidunt reprehenderit autem vel iste sed. Sunt, labore
+                     nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+            </p>
+
+
+                <div class="infos">
+                    <div class="info">
+                        <i class="far fa-calendar-alt fa-2x"></i>
+                        <div>
+                            <h4>Année</h4>
+                            <p>2006</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="info">
+                        <i class="fas fa-chart-line fa-2x"></i>
+                        <div>
+                            <h4>Activité</h4>
+                            <p>Eclairage et Distribution</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="info">
+                        <i class="fas fa-ad fa-2x"></i>
+                        <div>
+                            <h4>Marché</h4>
+                            <p>Semi-Publique</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="info">
+                        <i class="fas fa-hourglass fa-2x"></i>
+                        <div>
+                            <h4>Durée</h4>
+                            <p>6 mois</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="info">
+                        <i class="fas fa-dollar-sign fa-2x"></i>
+                        <div>
+                            <h4>Budget</h4>
+                            <p>9.6 M DHS/TTC, 0.9M €</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- projet 3 -->
+    <div class="project p-2015 m-Semi-Publique ">
+        <img src="./img/projets/hopital.jpg" alt="">
+    <div class="right-side">
+        <div class="title-project">
+            <i class="fas fa-project-diagram fa-2x"></i>
+            <h4>Hopital mére et enfants Bamako</h4>
+        </div>
+        <div class="line"></div>
+        <h5>Description :</h5>
+        <p>Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Cum, eos? Dolore cum, 
+             necessitatibus autem, minima excepturi facere eos
+              sit labore error impedit iste inventore, nobis deleniti
+               adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+                incidunt reprehenderit autem vel iste sed. Sunt, labore
+                 nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+        </p>
+
+
+            <div class="infos">
+                <div class="info">
+                    <i class="far fa-calendar-alt fa-2x"></i>
+                    <div>
+                        <h4>Année</h4>
+                        <p>2015</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="info">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <div>
+                        <h4>Activité</h4>
+                        <p>Eclairage et Distribution</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="info">
+                    <i class="fas fa-ad fa-2x"></i>
+                    <div>
+                        <h4>Marché</h4>
+                        <p>Semi-Publique</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="info">
+                    <i class="fas fa-hourglass fa-2x"></i>
+                    <div>
+                        <h4>Durée</h4>
+                        <p>18 mois</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="info">
+                    <i class="fas fa-dollar-sign fa-2x"></i>
+                    <div>
+                        <h4>Budget</h4>
+                        <p>40 M DHS/TTC, 3.8M €</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- projet 4 -->
+<div class="project p-2015 m-Semi-Publique ">
+    <img src="./img/projets/hotelAfriquiq.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>Hotel Afriquia, Bamako</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
                     <h4>Année</h4>
-                    <p>2014</p>
+                    <p>2015</p>
                 </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Hotel</p>
                 </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
                     <h4>Marché</h4>
-                    <p>Privé</p>
+                    <p>Semi-Publique</p>
                 </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
                     <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>2 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>35.5 M DHS/TTC, 3.37M €</p>
                 </div>
             </div>
         </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+    </div>
+</div>
+<!-- projet 5 -->
+<div class="project p-2016 m-Privé ">
+    <img src="./img/projets/immobiliere.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>Benin : Hotel et Immeubles</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
                     <h4>Année</h4>
-                    <p>2014</p>
+                    <p>2016</p>
                 </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>immobiliére</p>
                 </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
                     <h4>Marché</h4>
                     <p>Privé</p>
                 </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
                     <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>18 mois</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>38 M DHS/TTC, 3.61M €</p>
                 </div>
             </div>
         </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+</div>
+</div>
+<!-- projet 6 -->
+<div class="project p-2012 m-Privé">
+    <img src="./img/projets/Motel.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>HOTEL</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
                     <h4>Année</h4>
-                    <p>2014</p>
+                    <p>2012</p>
                 </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Cenre Commerciale / Hotel</p>
                 </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
                     <h4>Marché</h4>
                     <p>Privé</p>
                 </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
                     <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>2 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>56 M DHS/TTC, 5.32M €</p>
                 </div>
             </div>
         </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+</div>
+</div>
+<!-- projet 7 -->
+<div class="project p-2015 m-Publique">
+    <img src="./img/projets/palaisJustice.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>PALAIS DE JUSTICE</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
                     <h4>Année</h4>
-                    <p>2014</p>
+                    <p>2015</p>
                 </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Tribunal</p>
                 </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>Publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>2 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>106.8 M DHS/TTC, 10.15M €</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 8 -->
+<div class="project p-2015 m-Privé">
+    <img src="./img/projets/parcSindibad.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>PARC-SINDIBAD</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2015</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Parc d'attraction</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
                     <h4>Marché</h4>
                     <p>Privé</p>
                 </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
                     <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>1 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>13.2 M DHS/TTC, 1.2 M € TTC</p>
                 </div>
             </div>
         </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+</div>
+</div>
+<!-- projet 9 -->
+<div class="project p-2013 m-Privé">
+    <img src="./img/projets/mallFes.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>MALL FÉS</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
                     <h4>Année</h4>
-                    <p>2014</p>
+                    <p>2013</p>
                 </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Centre Commerciale</p>
                 </div>
-                <div class="form-label">
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
                     <h4>Marché</h4>
                     <p>Privé</p>
                 </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
-                    <h4>Durée</h4>
-                    <p>9 mois </p>
-                </div>
             </div>
-        </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+            <!--  -->
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
-                    <h4>Année</h4>
-                    <p>2014</p>
-                </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
-                </div>
-                <div class="form-label">
-                    <h4>Marché</h4>
-                    <p>Privé</p>
-                </div>
-                <div class="form-label">
-                    <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
                     <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>1 ans</p>
                 </div>
             </div>
-        </div>
-        <div class="box-project">
-            <img src="./img/projets/agenceBancairephoto.jpg" alt="" srcset="">
+            <!--  -->
             <div class="info">
-                <h4>Agence Bancaire</h4>
-                
-                <div class="form-label">
-                    <h4>Année</h4>
-                    <p>2014</p>
-                </div>
-                <div class="form-label">
-                    <h4>activité</h4>
-                    <p>Banque</p>
-                </div>
-                <div class="form-label">
-                    <h4>Marché</h4>
-                    <p>Privé</p>
-                </div>
-                <div class="form-label">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
                     <h4>Budget</h4>
-                    <p>13.2 M DHS/TTC , 1.25M </p>
-                </div>
-                <div class="form-label">
-                    <h4>Durée</h4>
-                    <p>9 mois </p>
+                    <p>22M DHS/TTC, 2.09 M € TTC</p>
                 </div>
             </div>
         </div>
+</div>
+</div>
+<!-- projet 10 -->
+<div class="project p-2008 m-Publique ">
+    <img src="./img/projets/aeroportM5.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>AÉROPORT MOHAMED 5</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2008</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Aéroport</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>Publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>4 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>102M DHS/TTC, 9.7 M € TTC</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 11 -->
+<div class="project p-2015 m-Publique">
+    <img src="./img/projets/gareONCF.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>GARE ONCF</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2015</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Gare ferroviaire</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>Publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>1 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>14.64 M DHS/TTC, 1.4 M € TTC</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 12 -->
+<div class="project p-2015 m-Semi-Publique">
+    <img src="./img/projets/MasenProjet.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>MASEN : NOOR 2</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            <div class="info spec">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>CENTRALE DE PRODUCTION D'ENERGIE SOLAIRE</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2015</p>
+                </div>
+            </div>
+           
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>Semi-publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>1 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>10.56 M DHS/TTC, 1M M €/TTC</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 13 -->
+<div class="project p-2015 m-Publique">
+    <img src="./img/projets/aeroportTetouan.jpg" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>AÉROPORT TÉTOUAN</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2015</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>Aéroport</p>
+                </div>
+            </div>
+           
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>1 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>4.3 M DHS/TTC, 400 000 €</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 14 -->
+<div class="project p-2016 m-Semi-Publique">
+    <img src="./img/projets/refcameroun.png" alt="">
+<div class="right-side">
+    <div class="title-project">
+        <i class="fas fa-project-diagram fa-2x"></i>
+        <h4>Cameroun : 4 hopitaux</h4>
+    </div>
+    <div class="line"></div>
+    <h5>Description :</h5>
+    <p>Lorem ipsum dolor sit amet consectetur
+         adipisicing elit. Cum, eos? Dolore cum, 
+         necessitatibus autem, minima excepturi facere eos
+          sit labore error impedit iste inventore, nobis deleniti
+           adipisci? Nihil voluptates laboriosam aspernatur vitae non,
+            incidunt reprehenderit autem vel iste sed. Sunt, labore
+             nihil! Obcaecati, cupiditate fuga itaque laudantium... 
+    </p>
+
+
+        <div class="infos">
+            
+            <div class="info">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <div>
+                    <h4>Année</h4>
+                    <p>2016</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-chart-line fa-2x"></i>
+                <div>
+                    <h4>Activité</h4>
+                    <p>hopitaux</p>
+                </div>
+            </div>
+           
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-ad fa-2x"></i>
+                <div>
+                    <h4>Marché</h4>
+                    <p>Semi-Publique</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-hourglass fa-2x"></i>
+                <div>
+                    <h4>Durée</h4>
+                    <p>3 ans</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="info">
+                <i class="fas fa-dollar-sign fa-2x"></i>
+                <div>
+                    <h4>Budget</h4>
+                    <p>160 M DHS/TTC, 14,5 M €</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<!-- projet 15 -->
     </div>
 </div>
 <footer id="main-footer" class="py-2">
@@ -412,7 +1143,7 @@
         </div>
 
         <div>
-            <a href="#">
+            <a href="MentionLegal.html">
                 <p>MENTIONS LÉGALES & CGU</p>
             </a>
         </div>

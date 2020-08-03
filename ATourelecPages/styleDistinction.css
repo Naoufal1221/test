@@ -78,6 +78,13 @@ body{
      align-items: center;
      justify-content: center;
  }
+ .showcase .showcase-container .showcase-content h1{ 
+     animation: anim 1s forwards ease;
+ }
+    @keyframes anim{
+        from{transform: translate(0,-10px);}
+        to{transform: translate(0,0);}
+    }
  .showcase +i{
     color: #c4302b;
     margin-left: 12rem;
@@ -88,9 +95,20 @@ body{
      width: 50%;
      height: 100%;
      margin: 0 auto;
-     text-align: center;
-     font-family: 'Lato', sans-serif;
-     font-weight: bold;
+     text-align: start;
+    }
+
+    .speech-parahraph span{
+        font-size:2rem;
+        font-weight: bolder;
+        color: #347AB7;
+    }
+
+    .speech-parahraph p{
+        padding-left: 1rem;
+        padding: 0.5rem 0;
+        font-style: italic;
+        /* font-weight: 600; */
     }
  .speech-parahraph +i{
     color: #5C95CB;
@@ -148,7 +166,7 @@ body{
 
  .cards .card p{
      text-align: start;
-     padding: 0.7rem 0.5rem;
+     padding:  1rem;
  }
 
  .cards .card a{
