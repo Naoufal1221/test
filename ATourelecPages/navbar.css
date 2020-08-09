@@ -41,6 +41,7 @@ ul{
     overflow: hidden;
     width: 100%;
     background: #347AB7;
+    
 }
 
 .container-header{
@@ -325,10 +326,20 @@ option:focus{
         flex-direction: column;
     }
 
+    .menu .menu-nav{padding-top: 7rem;}
+
     .nav-item .inner-item li a::before{
         content: '+ ';
     }
  
+}
+
+@media(max-height:825px){
+
+    .nav-item > a{
+        font-size: 30px;
+    }
+    .menu .menu-nav{padding-top: 7rem;}
 }
 
 @media(max-width:600px){
@@ -358,6 +369,12 @@ option:focus{
     }
 
 
+}
+
+@media(max-height:600px){
+    .nav-item > a{
+        font-size: 18px;
+    }
 }
 
 

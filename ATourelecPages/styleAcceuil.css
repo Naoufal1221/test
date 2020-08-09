@@ -16,6 +16,8 @@ body{
     background: #f6f6f6;
 }
 
+.container-header .right-side{z-index: 2 !important;}
+
 .link-item i,
 .right-side h4,
 #main-footer a,
