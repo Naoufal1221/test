@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
+
+body{
+    background: #347AB7;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin:0;
+}
+.container{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+
+.links{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background: #5C95CB;
+    margin-bottom: 2rem;
+}
+.links a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    color: #fff;
+    margin-left: 1rem;
+    transition: color 0.4s ease;
+}
+.links a:hover{
+    color: #333;
+}
+
+
+.container .container-content{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+   display: flex;
+   grid-gap: 2rem;
+
+}
+.container-content .left-corner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.img-left{
+    background: url('./img/professions-santé_web22.jpg') no-repeat center center/cover ;
+    width: 35vw;
+    height: 50vh;
+    transition: all 0.3s ease;
+}
+
+.hashtags{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+}
+
+.ic-covid{
+    display: flex;
+    padding: 1rem 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.ic-covid a{
+    text-decoration: none;
+    color: #fff;
+}
+.ic-covid a i{
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: #347AB7;
+
+}
+.right-corner{
+    width: 100%;
+    height: 100%;
+}
+
+.right-corner .first-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-corner .first-line h4,
+.right-corner  h3{
+    color: #347AB7;
+}
+
+.right-corner .first-line h4,
+.right-corner  h3,
+.right-corner  h1{
+    animation: anim 1s forwards ease;
+}
+@keyframes anim{
+    from{transform: translate(0,-10px);}
+    to{transform: translate(0,0);}
+}
+
+
+.right-corner img {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+@media(max-width:768px)
+{
+    .container-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-left{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .links{
+        justify-content: center;
+    }
+}
