@@ -153,24 +153,24 @@ fiveBox.addEventListener('mouseenter',function(){
   setTimeout(function(){fiveInner.style.display='block';},0);
   setTimeout(function(){fiveInner.style.opacity=1;},600);
 });
-fiveSousList.addEventListener('mouseleave',function(){
-  fiveLine.classList.remove('visible-line');
-  setTimeout(function(){fiveInner.style.display='none';},600);
-  setTimeout(function(){fiveInner.style.opacity=0;},200);
-});
+// fiveSousList.addEventListener('mouseleave',function(){
+//   fiveLine.classList.remove('visible-line');
+//   setTimeout(function(){fiveInner.style.display='none';},600);
+//   setTimeout(function(){fiveInner.style.opacity=0;},200);
+// });
 
 
 
-lastBox.addEventListener('mouseenter',function(){
-  lastLine.classList.add('visible-line');
-  setTimeout(function(){lastInner.style.display='block';},0);
-  setTimeout(function(){lastInner.style.opacity=1;},600);
-});
-lastSousList.addEventListener('mouseleave',function(){
-  lastLine.classList.remove('visible-line');
-  setTimeout(function(){lastInner.style.display='none';},400);
-  setTimeout(function(){lastInner.style.opacity=0;},200);
-});
+// lastBox.addEventListener('mouseenter',function(){
+//   lastLine.classList.add('visible-line');
+//   setTimeout(function(){lastInner.style.display='block';},0);
+//   setTimeout(function(){lastInner.style.opacity=1;},600);
+// });
+// lastSousList.addEventListener('mouseleave',function(){
+//   lastLine.classList.remove('visible-line');
+//   setTimeout(function(){lastInner.style.display='none';},400);
+//   setTimeout(function(){lastInner.style.opacity=0;},200);
+// });
 
 
 
