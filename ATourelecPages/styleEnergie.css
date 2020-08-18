@@ -88,15 +88,21 @@ body{
     
  }
 
- .showcase .showcase-container .showcase-content h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all 0.3s ease;
+ .showcase .showcase-container .showcase-content h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    animation: topic 1s forwards ease;
+ }
+ @keyframes topic{
+     from{
+         transform: translate(0,-20px);
+     }
+     to{
+         transform: translate(0,0);
+     }
  }
 
- .showcase .showcase-container .showcase-content h1:hover{
-    color: #c4302b;
-    font-size: 2rem;
- }
 
 
  .showcase + h2{

@@ -118,14 +118,14 @@ h1,h2,h3,h4{
 }
 
 .speech h4{
-    animation: topic 1s forwards ease
+    animation: topic 1s forwards ease;
 }
 
     .speech .line{
         width: 55px;
         height: 5px;
         background: #347AB7;
-        border-radius: 2px;
+        /* border-radius: 2px; */
         margin-left: 10px;
         margin: 0 0 1rem 1rem;
     }
