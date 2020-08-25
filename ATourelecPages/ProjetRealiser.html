@@ -14,9 +14,9 @@
     <!-- navbar -->
     <header id="main-header">
         <div class="container-header">
-            <section class="left-side">
+            <a href="index.html" class="left-side">
                 <img src="./img/logo.png" alt="">
-            </section>
+            </a>
 
             <section class="right-side">
                 <!-- icon Section -->
@@ -161,11 +161,11 @@
 
                      <!-- third Sous list  -->
                      <li class="nav-item sous-list">
-                        <a id="fourth" href="#">Nos Projets</a> 
+                        <a id="fourth" href="projets.html">Nos Projets</a> 
                         <div class="invisible-line"></div>
                         <ul class="inner-item">
                             <li>
-                                <a class="link-item" href="#">
+                                <a class="link-item" href="Chantier.html">
                                     Nos Chantiers
                                 </a>
                             </li>
@@ -212,11 +212,19 @@
 
 <div class="container">
     <div class="links">
-        <a href="Presentation.html" >Président fondateur</a>
-        <a href="historiqueProjet.html" >Historique</a>
-        <a href="#" >Valeurs et engagements</a>
-        <a href="#" >Citoyenneté</a>
-        <a href="Distinction.html" >Distinction</a>
+        <section>
+            <h2>Nos Realisations</h2>
+        </section>
+
+        <section>
+            <a href="index.html">
+                <h4>Home</h4>
+            </a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="#">
+                <h4>Nos Realisations</h4>
+            </a>
+        </section>  
     </div>
     <div class="showcase">
         <div class="showcase-container">
@@ -256,28 +264,29 @@
         </div>
         <!--  -->
         <div class="filtre">
-            <h4>Par Activités : </h4>
-            <select name="" id="mySelectActivity">
+            <h4>Par chantiers : </h4>
+            <select name="" id="mySelectChantier">
                 <option value="Voir tout">Voir tout</option>
                 <option value="Banque">Banque</option>
                 <option value="Eclairage et Distribution">Eclairage et Distribution</option>
                 <option value="Hotel">Hotel</option>
+                <option value="Hopital">Hopital</option>
                 <option value="Immobiliére">Immobiliére</option>
-                <option value="Centre Commerciale / Hotel">Centre Commerciale / Hotel</option>
+                <option value="Centre">Centre Commerciale / Hotel</option>
                 <option value="Tribunal">Tribunal</option>
-                <option value="Parc d'attraction">Parc d'attraction</option>
+                <option value="Parc">Parc d'attraction</option>
                 <option value="Centre Commerciale">Centre Commerciale</option>
                 <option value="Aéroport">Aéroport</option>
                 <option value="Gare">Gare</option>
             </select>
-            <a href="#" id="filtrer" class="btn">Filtrer</a>
+            <a href="#" id="filtreByChantier" class="btn">Filtrer</a>
         </div>
     </div>
 
     
     <div></div>
     <div class="projects">
-        <div class="project p-2014 m-Privé">
+        <div class="project p-2014 m-Privé c-Banque">
                 <img src="./img/projets/agenceBancairephoto.jpg" alt="">
             <div class="right-side">
                 <div class="title-project">
@@ -340,7 +349,7 @@
             </div>
         </div>
         <!-- projet 2 -->
-        <div class="project p-2006 m-Semi-Publique">
+        <div class="project p-2006 m-Semi-Publique c-Aéroport">
             <img src="./img/projets/aeroport.jpg" alt="">
         <div class="right-side">
             <div class="title-project">
@@ -403,7 +412,7 @@
         </div>
     </div>
     <!-- projet 3 -->
-    <div class="project p-2015 m-Semi-Publique ">
+    <div class="project p-2015 m-Semi-Publique c-Hopital ">
         <img src="./img/projets/hopital.jpg" alt="">
     <div class="right-side">
         <div class="title-project">
@@ -466,7 +475,7 @@
     </div>
 </div>
 <!-- projet 4 -->
-<div class="project p-2015 m-Semi-Publique ">
+<div class="project p-2015 m-Semi-Publique c-Hotel ">
     <img src="./img/projets/hotelAfriquiq.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -529,7 +538,7 @@
     </div>
 </div>
 <!-- projet 5 -->
-<div class="project p-2016 m-Privé ">
+<div class="project p-2016 m-Privé c-Hotel ">
     <img src="./img/projets/immobiliere.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -592,7 +601,7 @@
 </div>
 </div>
 <!-- projet 6 -->
-<div class="project p-2012 m-Privé">
+<div class="project p-2012 m-Privé c-Hotel">
     <img src="./img/projets/Motel.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -655,7 +664,7 @@
 </div>
 </div>
 <!-- projet 7 -->
-<div class="project p-2015 m-Publique">
+<div class="project p-2015 m-Publique c-Immobiliére">
     <img src="./img/projets/palaisJustice.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -718,7 +727,7 @@
 </div>
 </div>
 <!-- projet 8 -->
-<div class="project p-2015 m-Privé">
+<div class="project p-2015 m-Privé c-Parc">
     <img src="./img/projets/parcSindibad.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -781,7 +790,7 @@
 </div>
 </div>
 <!-- projet 9 -->
-<div class="project p-2013 m-Privé">
+<div class="project p-2013 m-Privé c-Centre">
     <img src="./img/projets/mallFes.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -844,7 +853,7 @@
 </div>
 </div>
 <!-- projet 10 -->
-<div class="project p-2008 m-Publique ">
+<div class="project p-2008 m-Publique c-Aéroport ">
     <img src="./img/projets/aeroportM5.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -907,7 +916,7 @@
 </div>
 </div>
 <!-- projet 11 -->
-<div class="project p-2015 m-Publique">
+<div class="project p-2015 m-Publique c-Gare">
     <img src="./img/projets/gareONCF.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -970,7 +979,7 @@
 </div>
 </div>
 <!-- projet 12 -->
-<div class="project p-2015 m-Semi-Publique">
+<div class="project p-2015 m-Semi-Publique c-Immobiliére">
     <img src="./img/projets/MasenProjet.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -1034,7 +1043,7 @@
 </div>
 </div>
 <!-- projet 13 -->
-<div class="project p-2015 m-Publique">
+<div class="project p-2015 m-Publique c-Aéroport">
     <img src="./img/projets/aeroportTetouan.jpg" alt="">
 <div class="right-side">
     <div class="title-project">
@@ -1099,7 +1108,7 @@
 </div>
 </div>
 <!-- projet 14 -->
-<div class="project p-2016 m-Semi-Publique">
+<div class="project p-2016 m-Semi-Publique c-Hopital">
     <img src="./img/projets/refcameroun.png" alt="">
 <div class="right-side">
     <div class="title-project">

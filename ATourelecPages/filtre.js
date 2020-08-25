@@ -1,5 +1,7 @@
 const filt = document.getElementById('filtreByYear');
 const filtByMarket = document.getElementById('filtreByMarket');
+const filtByChantier = document.getElementById('filtreByChantier');
+
 const allProjects = document.querySelectorAll('.project');
 
 filt.addEventListener('click',function(){
@@ -15,5 +17,13 @@ filtByMarket.addEventListener('click',function(){
   console.log('Value is '+result);
   allProjects.forEach(proj => proj.style.display='none');
   document.querySelectorAll('.m-'+ result).forEach(p => p.style.display='block');
+
+})
+
+filtByChantier.addEventListener('click',function(){
+  const result = document.getElementById('mySelectChantier').value;
+  console.log('Value is '+result);
+  allProjects.forEach(proj => proj.style.display='none');
+  document.querySelectorAll('.c-'+ result).forEach(p => p.style.display='block');
 
 })
