@@ -83,6 +83,16 @@ body{
     justify-content: center;
     padding: 0 5rem;
     margin: 2rem 0;
+    animation: cand 1s forwards ease;
+}
+
+@keyframes cand{
+    from{
+        transform: translate(0,-10px);
+    }
+    to{
+        transform: translate(0,0);
+    }
 }
 
 .chantiers .elemnt{

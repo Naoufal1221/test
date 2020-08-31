@@ -36,7 +36,13 @@ body{
     color: #555;
 }
 
-.links a{color: #555;}
+.links a{
+    color: #555;
+    transition: all 0.3s ease-in-out;
+}
+.links a:hover{
+    transform: translate(0,-5px);
+}
 .links section:nth-child(2){
     display: flex;
     align-items: center;
@@ -99,9 +105,17 @@ body{
 
 .left-box h2 ,
 .right-box h2{
-    margin-bottom: 1rem;
     color: #138FD6;
     animation: cand 1s forwards ease-in-out;
+}
+
+.line{
+    width: 80px;
+    height: 5px;
+    background: #347AB7;
+    margin-bottom: 1rem;
+    margin-left: 0.7rem;
+
 }
 
 
@@ -111,6 +125,7 @@ body{
     grid-gap: 1rem;
     margin: 3rem 1rem;
 }
+
 
 .left-box div i{
     color: #c4302b;
@@ -185,4 +200,17 @@ body{
 .modal-content img{
     width: 80%;
     height: 80%;
+}
+
+@media(max-width:768px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:600px){
+    .links{
+        justify-content: center;
+    }
 }
