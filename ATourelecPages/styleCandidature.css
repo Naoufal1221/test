@@ -6,15 +6,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,label{
     font-family: 'Lato', sans-serif;
 }
 
 .active{
     color: #347AB7;
 }
-
-
 
 .container{
     width: 95%;
@@ -151,13 +149,23 @@ h1,h2,h3,h4{
 }
 
 .Sides .leftSide .left .form-group{
- display: grid;
- grid-template-columns: repeat(2,1fr);
- justify-content: center;
+ display: flex;
+ grid-gap: 1.2rem;
+ margin-bottom: 2rem;
+ margin-top: 0.7rem;
+ text-align: start;
  align-items: center;
- text-align: center;
- padding: 1rem 0;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
 }
+.Sides .leftSide .left .form-group .fd{
+    font-size: 1.9rem;
+    text-align: end;
+    color: #c4302b !important;
+}
+
+.mr-1{margin-left: 1rem;}
 .Sides .leftSide .left .form-group .title{
     width: 100%;
     text-align: center;
@@ -312,6 +320,63 @@ width: 30%;
 .formulaire .form-candidature .btn:hover{
     background: #c4302b;
     transform: translate(0,-5px);
+}
+
+.notif,
+.notif-danger{
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    margin-right: 4rem;
+    animation: animc 1s forwards ease-in-out;
+    opacity: 0.9;
+}
+
+@keyframes animc{
+    from{
+        transform: translate(500px,0);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+.notif-danger{
+    top: 200px;
+}
+.notif .notif-content,
+.notif-danger .notif-content-danger{
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 10px;
+    border: none;
+    grid-gap: 0.5rem;
+    padding: 0.7rem;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
+
+.notif .notif-content .ic,
+.notif-danger .notif-content-danger .ic{
+    font-size: 2rem;
+    border: 2px #4CAF50 solid;
+    background: #4CAF50;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.notif-danger .notif-content-danger .ic{
+    border: 2px #c4302b solid;
+    background: #c4302b;
+}
+
+.notif .notif-content h4{
+    color: #4CAF50;
+}
+.notif-danger .notif-content-danger h4{
+    color: #c4302b;
 }
 
 /*Responsive*/

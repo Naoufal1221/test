@@ -148,11 +148,11 @@ fourthSousList.addEventListener('mouseleave',function(){
 });
 
 
-fiveBox.addEventListener('mouseenter',function(){
-  fiveLine.classList.add('visible-line');
-  setTimeout(function(){fiveInner.style.display='block';},0);
-  setTimeout(function(){fiveInner.style.opacity=1;},600);
-});
+// fiveBox.addEventListener('mouseenter',function(){
+//   fiveLine.classList.add('visible-line');
+//   setTimeout(function(){fiveInner.style.display='block';},0);
+//   setTimeout(function(){fiveInner.style.opacity=1;},600);
+// });
 // fiveSousList.addEventListener('mouseleave',function(){
 //   fiveLine.classList.remove('visible-line');
 //   setTimeout(function(){fiveInner.style.display='none';},600);
@@ -172,7 +172,18 @@ fiveBox.addEventListener('mouseenter',function(){
 //   setTimeout(function(){lastInner.style.opacity=0;},200);
 // });
 
+document.getElementById('postuler').addEventListener('click',()=>{
+  document.querySelector('.notif').style.display='block';
+  document.querySelector('.notif-danger').style.display='block';
 
+  setTimeout(()=>{
+    document.querySelector('.notif').style.display='none';
+    document.querySelector('.notif-danger').style.display='none';
+  },2000);
+  
+  
+  
+});
 
 
 
