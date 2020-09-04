@@ -208,6 +208,62 @@ button:focus{
     transform: translate(0,-5px);
 }
 
+.notif,
+.notif-danger{
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    margin-right: 4rem;
+    animation: animc 1s forwards ease-in-out;
+    opacity: 0.9;
+}
+
+@keyframes animc{
+    from{
+        transform: translate(500px,0);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+.notif-danger{
+    top: 200px;
+}
+.notif .notif-content,
+.notif-danger .notif-content-danger{
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 10px;
+    border: none;
+    grid-gap: 0.5rem;
+    padding: 0.7rem;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+}
+
+.notif .notif-content .ic,
+.notif-danger .notif-content-danger .ic{
+    font-size: 2rem;
+    border: 2px #4CAF50 solid;
+    background: #4CAF50;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.notif-danger .notif-content-danger .ic{
+    border: 2px #c4302b solid;
+    background: #c4302b;
+}
+
+.notif .notif-content h4{
+    color: #4CAF50;
+}
+.notif-danger .notif-content-danger h4{
+    color: #c4302b;
+}
 /*Responsive*/
 @media(max-width: 1507px){
     .Sides .leftSide .line{

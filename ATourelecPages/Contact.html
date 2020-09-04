@@ -251,31 +251,44 @@
         <div class="formulaire">
             <div class="form-candidature">
                 <label for="Nom">Nom</label>
-                <input type="text" placeholder="Nom...">
+                <input type="text" required placeholder="Nom...">
             </div>
             <div class="form-candidature">
                 <label for="Nom">Prenom</label>
-                <input type="text" placeholder="Prenom...">
+                <input type="text" required placeholder="Prenom...">
             </div>
             <div class="form-candidature">
                 <label for="Nom">Email</label>
-                <input type="text" placeholder="example.2020@gmail.com">
+                <input type="email" required placeholder="example.2020@gmail.com">
             </div>
             <div class="form-candidature">
                 <label for="Nom">Tel</label>
-                <input type="text" placeholder="exp: 0623061248">
+                <input type="text" required placeholder="exp: 0623061248">
             </div>
             
             <div class="form-candidature">
                 <label for="Candidature">Votre Message</label>
-                <textarea  cols="50" rows="5" placeholder="message..."></textarea>
+                <textarea  cols="50" rows="5" placeholder="message..." required></textarea>
             </div>
             <div class="form-candidature">
-                <button class="btn">Envoyer</button>
+                <button class="btn" id="postuler">Envoyer</button>
             </div>
             
         </div>
     </form>
+    
+    <div class="notif">
+        <div class="notif-content">
+            <ion-icon name="checkmark-outline" class="ic"></ion-icon>
+            <h4>Enregistrement effectué avec succés </h4>
+        </div>
+    </div>
+    <div class="notif-danger">
+        <div class="notif-content-danger">
+            <ion-icon name="alert-outline" class="ic"></ion-icon> 
+                <h4>Erreur lors de l'insertion des données !!! </h4>
+        </div>
+    </div>
 </div>
     </div>
     <!-- footer -->
@@ -296,6 +309,7 @@
 
     </footer>
     <!--  -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="script.js"></script>
 <!--     
     
