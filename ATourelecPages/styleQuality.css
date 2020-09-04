@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #347AB7;
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 95%;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto;
+    padding-bottom: 1rem ;
+}
+.links{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5C95CB;
+}
+.links a{
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-right: #fff 1px solid;
+    padding-right: 1rem;
+    transform: translate(0,0);
+    transition: transform 0.3s ease-in-out;
+}
+.links a:last-child{
+    border-right: none;
+}
+.links .active{
+    color: #c4302b;
+}
+.links a:hover{
+    transform: translate(0,-5px);
+}
+
+.showcase{
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+   
+}
+.showcase::before{
+    content: '';
+    background: url(./img/chiffrecles.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.5;
+    
+}
+
+ .showcase .showcase-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+ }
+
+ .showcase .showcase-container .showcase-content{
+     width: 80%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease;
+    
+ }
+
+ .showcase .showcase-container .showcase-content h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    animation: topic 1s forwards ease;
+ }
+ @keyframes topic{
+     from{
+         transform: translate(0,-20px);
+     }
+     to{
+         transform: translate(0,0);
+     }
+ }
+
+ .showcase .showcase-container .showcase-content h1:hover{
+    color: #c4302b;
+    font-size: 2rem;
+ }
+
+ .showcase + h2{
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+ }
+ .line{
+     width: 190px;
+     height: 9px;
+     background: #347AB7;
+     border-radius: 2px;
+     margin-left: 0.7rem;
+     margin-bottom: 2rem;
+
+ }
+
+ .time-ul{
+     padding: 1rem 0;
+     margin-top: 1rem;
+     background: #f6f6f6;
+
+ }
+
+ .time-ul ul li{
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #e3e3e3;
+}
+
+.time-ul ul:first-child li::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background:#e3e3e3;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.time-ul ul li .quality-content{
+    width: 400px;
+    padding: 1rem;
+    background: #317ec7;
+    transition: all 1s ease-in-out;
+    /* visibility: hidden; */
+    color: #fff;
+    /* opacity: 0; */
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 1.3rem;
+}
+
+/* .time-ul ul li:nth-child(odd) div{
+    left: 40px;
+    transform: translateX(200px);
+} */
+
+.time-ul ul li:nth-child(even) div{
+    left: -434px;
+    transform: translateX(-435px);
+}
+
+
+@media(max-width:900px)
+{
+    .time-ul ul li .quality-content{
+        width: 250px;
+    }
+
+    .time-ul ul li:nth-child(even) div{
+        /* left: -200px; */
+        transform: translateX(-290px);
+    }
+    
+}
+
+@media(max-width:600px)
+{
+    .time-ul ul li .quality-content{
+        width: calc(100vw -90px);
+        background: #5C95CB;
+    }
+
+    .time-ul ul li:nth-child(even) div{
+        transform: translateX(0);
+    }
+
+    .time-ul ul li{
+        margin: 0 4rem;
+    }
+
+    .links{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .links a{
+        border-right: none;
+        padding-bottom: 1rem;
+        border-bottom: #fff 1px solid;
+
+    }
+
+    .links a:hover{
+        transform: translate(-5px,0);
+    }
+
+    .links a:nth-child(4),
+    .links a:nth-child(5),
+    .links a:nth-child(6){
+        border-bottom: #fff 1px solid;
+    }
+
+    .links a:nth-child(6){border: none;}
+}
+
