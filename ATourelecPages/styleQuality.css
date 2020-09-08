@@ -102,15 +102,21 @@ body{
      }
  }
 
- .showcase .showcase-container .showcase-content h1:hover{
+ /* .showcase .showcase-container .showcase-content h1:hover{
     color: #c4302b;
     font-size: 2rem;
- }
+ } */
 
  .showcase + h2{
-    margin-top: 1rem;
-    margin-left: 0.7rem;
+     padding: 0.7rem 0;
+    background: #5C95CB;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #f6f6f6;
+    font-style: oblique;
  }
+
  .line{
      width: 190px;
      height: 9px;
@@ -123,7 +129,7 @@ body{
 
  .time-ul{
      padding: 1rem 0;
-     margin-top: 1rem;
+     /* margin-top: 1rem; */
      background: #f6f6f6;
 
  }
