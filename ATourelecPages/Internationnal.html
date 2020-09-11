@@ -231,47 +231,16 @@
                     </div>
                 </div>
             </div>
-
-            <div class="boxes">
-                <div class="left-box">
-                    <h2>Nos Activités : </h2>
-                    <div>
-                        <i class="fas fa-dot-circle"></i>
-                        <h4>Courant Fort / Faible</h4>
-                    </div>
-                    <div>
-                        <i class="fas fa-dot-circle"></i>
-                        <h4>Climatisation / Plomberie</h4>
-                    </div>
-                    <div>
-                        <i class="fas fa-dot-circle"></i>
-                        <h4>Transport d'Energie</h4>
-                    </div>
-                    <div>
-                        <i class="fas fa-dot-circle"></i>
-                        <h4>Tableaux Electriques</h4>
-                    </div>
-                    <div>
-                        <i class="fas fa-dot-circle"></i>
-                        <h4>Energie Renouvelables</h4>
-                    </div>
-                </div>
-
-                <div class="right-box">
+            <div class="title-map">
                 <h2>Notre Presence en afrique : </h2>
                 <div class="line"></div>
-                    <img src="./img/836d9c0d-d8fd-44b7-afeb-778d073970af.png"  id="modalBtn" alt="">   
-                </div>
             </div>
+            
+           
+                <div class="img-magnifier-container">
+                    <img id="myimage" src="./img/inter.png"  width="100%" height="100%">
+                  </div>
 
-              <!--  -->
-    <!-- <div class="modal" id="simpleModel">
-        <div class="modal-content">
-
-            <img src="./img/836d9c0d-d8fd-44b7-afeb-778d073970af.png" alt=""> 
-        </div>
-    </div>
-      -->
     </div>
 
   
@@ -293,7 +262,10 @@
     </div>
 
 </footer>
-
+    <script src="zoom.js"></script>
+    <script>
+        magnify("myimage", 3);
+    </script>
     <script src="script.js"></script>
     <script src="modal.js"></script>
 </body>

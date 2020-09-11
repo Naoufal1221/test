@@ -52,62 +52,73 @@ body{
     color: #fff;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
    
 }
 .showcase::before{
     content: '';
-    background: url(./img/chiffrecles.jpg) no-repeat center center/cover;
+    background: url('./img/Page\ Qualité/Page0Photo3.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
-    opacity: 0.5;
-    
+    height: 100vh;
+    opacity: 0.7;
+    animation: slide 20s infinite ;
+    animation-delay: 2s;
 }
 
- .showcase .showcase-container{
-    width: 100%;
-    height: 100%;
+@keyframes slide{
+    25%{
+        background: url('./img/Page\ Qualité/Page0Photo4.jpg')  no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+    }
+    /* 50%{
+        background: url('./img/Page\ Qualité/Page7Photo3.jpg')  no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+    } */
+    75%{
+        background: url('./img/Page\ Qualité/PHOTO MASEN 2.JPG')  no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+    }
+    100%{
+        background: url('./img/Page\ Qualité/PHOTO MASEN 3.JPG')  no-repeat center center/cover;
+        width: 100%;
+        height: 100vh;
+    }
+  
+}
+
+.showcase .showcase-content{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    text-align: center;
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: 1;
- }
+}
 
- .showcase .showcase-container .showcase-content{
-     width: 80%;
-     height: 100%;
-     display: flex;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
-     transition: all 0.3s ease;
-    
- }
-
- .showcase .showcase-container .showcase-content h1{
-    font-family: 'Lato', sans-serif;
+.showcase .showcase-content h1{
+    margin-top: 20px;
     font-size: 4rem;
-    animation: topic 1s forwards ease;
- }
- @keyframes topic{
-     from{
-         transform: translate(0,-20px);
-     }
-     to{
-         transform: translate(0,0);
-     }
- }
+    animation: cand 1s forwards ease-in-out;
+}
+@keyframes cand{
+    from{
+        transform: translate(0,-10px);
+    }
+    to{
+        transform: translate(0,350px);
+    }
+}
+ 
 
- /* .showcase .showcase-container .showcase-content h1:hover{
-    color: #c4302b;
-    font-size: 2rem;
- } */
-
- .showcase + h2{
+ .title-quality{
      padding: 0.7rem 0;
     background: #5C95CB;
     height: 100%;
@@ -115,6 +126,7 @@ body{
     text-align: center;
     color: #f6f6f6;
     font-style: oblique;
+    padding: 2rem 0;
  }
 
  .line{
