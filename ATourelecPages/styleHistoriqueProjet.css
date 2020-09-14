@@ -34,7 +34,8 @@ h1,h2,h3,h4{
 }
 
 .showcase,
-.second-showcase{
+.second-showcase,
+.paragraph-showcase{
     background: #333;
     color: #fff;
     position: relative;
@@ -43,7 +44,8 @@ h1,h2,h3,h4{
    
 }
 .showcase::before,
-.second-showcase::before{
+.second-showcase::before,
+.paragraph-showcase::before{
     content: '';
     background: url(./img/pexels-porapak-apichodilok-346885.jpg) no-repeat center center/cover;
     position: absolute;
@@ -55,7 +57,8 @@ h1,h2,h3,h4{
 }
 
 .showcase .showcase-content,
-.second-showcase .second-showcase-content{
+.second-showcase .second-showcase-content,
+.paragraph-showcase-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,16 +69,37 @@ h1,h2,h3,h4{
     z-index: 1;
 }
 
-.second-showcase{
+.second-showcase,
+.paragraph-showcase{
     height: 50vh;
 }
-.second-showcase::before{
+.second-showcase::before,
+.paragraph-showcase::before{
     content: '';
     background: url(./img/chiffrecles2.jpg) no-repeat center center/cover;
     height: 50vh;
     opacity: 0.5;
 }
 
+.paragraph-showcase::before{
+    background: url('./img/Qui\ sommes-nous/CV7B6082.jpg') no-repeat center center/cover;
+    opacity: 0.3;
+}
+
+.paragraph-showcase-content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 5rem;
+    animation: cand 1s forwards ease-in-out;
+}
+
+.paragraph-showcase-content h1{
+    margin-bottom: 1rem;
+    color: #e74a3b;
+}
 .showcase .showcase-content h1{
     margin: auto 0;
     animation: cand 1s forwards ease-in-out;
@@ -102,6 +126,7 @@ h1,h2,h3,h4{
     /* grid-gap: 0.7rem; */
     width: 100%;
     height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
 .content{
@@ -117,31 +142,14 @@ h1,h2,h3,h4{
     
 }
 
-.content p{
+.content p,
+.paragraph-showcase-content span{
     font-weight: 300;
     font-size: 1.3rem;
     padding: 2rem;
     font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 2;
 }
-
-.paragraph{
-    background: rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    grid-gap: 2rem;
-    color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.paragraph p{
-    padding: 2rem;
-}
-
-
 
 /*timeline*/
 /* #timeline{
@@ -281,6 +289,31 @@ h1,h2,h3,h4{
 
 /*Make it Completely Responsive*/
 
+@media(max-width:768px){
+    .second-part{
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .showcase-content h1{
+        float: left;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        left: 150px;
+
+    }
+    
+}
+
 @media(max-width:900px){
 
     .showcase .showcase-container {
@@ -289,11 +322,11 @@ h1,h2,h3,h4{
         width: 50%;
     }
     #timeline ul li div{
-        width: 250px;
+        width: 252px;
     }
 
     #timeline ul li:nth-child(even) div{
-        left: -284px;
+        left: -282px;
     }
     
     #timeline ul li::after{
@@ -301,7 +334,7 @@ h1,h2,h3,h4{
     }
     @keyframes dots {
         to{
-            background: #333;
+            background: #999;
         }
     }
 
@@ -310,9 +343,9 @@ h1,h2,h3,h4{
 
     }
 
-    .showcase .showcase-container .showcase-content{
+    /* .showcase .showcase-container .showcase-content{
         display: none;
-    }
+    } */
 
 }
 
@@ -323,6 +356,17 @@ h1,h2,h3,h4{
         top: 380px;
         width: 80%;
     }
+
+    .showcase-content h1{
+        left: 50px;
+    }
+
+    .paragraph-showcase::before,
+    .paragraph-showcase{
+        height: 70vh;
+    }
+
+
     #timeline ul li{
         margin-left: 20px;
     }
@@ -335,10 +379,34 @@ h1,h2,h3,h4{
         left: 40px;
     }
 
-    #timeline ul li:nth-child(even) div::after{
+    /**/
+    
+    /**/
+    
+    #timeline ul li:nth-child(2) div:after{
         right: 250px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent var(--secondary-color) transparent transparent;
+        border-color:transparent #317ec7 transparent transparent;
+    }
+    #timeline ul li:nth-child(4) div::after{
+        right: 250px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #f6c23e transparent transparent;
+    }
+    #timeline ul li:nth-child(6) div::after{
+        right: 250px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #e74a3b transparent transparent;
+    }
+    #timeline ul li:nth-child(8) div::after{
+        right: 250px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #20c9a6 transparent transparent;
+    }
+    #timeline ul li:nth-child(10) div::after{
+        right: 250px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #20c9a6 transparent transparent;
     }
   
 }
