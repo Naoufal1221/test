@@ -33,123 +33,106 @@ h1,h2,h3,h4{
     margin: 0 auto;
 }
 
-.showcase,
-.second-showcase,
-.paragraph-showcase{
+.showcase{
     background: #333;
     color: #fff;
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
    
 }
-.showcase::before,
-.second-showcase::before,
-.paragraph-showcase::before{
+.showcase::before{
     content: '';
-    background: url(./img/pexels-porapak-apichodilok-346885.jpg) no-repeat center center/cover;
+    background: url('./img/Qui\ sommes-nous/CV7B6084.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 30vh;
-    opacity: 0.7;
+    height: 50vh;
+    opacity: 0.6;
 }
 
-.showcase .showcase-content,
-.second-showcase .second-showcase-content,
-.paragraph-showcase-content{
+.showcase .showcase-container > h4{
+    z-index: 1;
+    position: relative;
+    width: 20%;
+    text-align: center;
+    background: #5C95CB;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0.7;
+    margin: 0 auto;
+    transition: opacity 0.4s ease-in-out;
+    animation: head 0.7s forwards ease-in;
+}
+@keyframes head{
+    from{
+        transform: translate(0,-40px);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+.showcase .showcase-content{
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: start;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 1;
 }
-
-.second-showcase,
-.paragraph-showcase{
-    height: 50vh;
-}
-.second-showcase::before,
-.paragraph-showcase::before{
-    content: '';
-    background: url(./img/chiffrecles2.jpg) no-repeat center center/cover;
-    height: 50vh;
-    opacity: 0.5;
-}
-
-.paragraph-showcase::before{
-    background: url('./img/Qui\ sommes-nous/CV7B6082.jpg') no-repeat center center/cover;
-    opacity: 0.3;
-}
-
-.paragraph-showcase-content{
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.showcase .showcase-content .mission,
+.showcase .showcase-content .objectif{
+    width: 700px;
     height: 100%;
-    width: 100%;
-    margin-top: 5rem;
-    animation: cand 1s forwards ease-in-out;
+    margin: 5rem 1rem 0 1rem;
+    background: #5C95CB;
+    opacity: 0.8;
+    padding: 0 2rem 1rem 2rem;
+    border-radius: 7px;
+    transition: all 0.4s ease;
+   
 }
 
-.paragraph-showcase-content h1{
-    margin-bottom: 1rem;
-    color: #e74a3b;
+.showcase .showcase-content .mission:hover,
+.showcase .showcase-content .objectif:hover,
+.showcase .showcase-container > h1:hover{
+    opacity: 1;
 }
-.showcase .showcase-content h1{
-    margin: auto 0;
-    animation: cand 1s forwards ease-in-out;
+
+
+.showcase .showcase-content .mission h4,
+.showcase .showcase-content .objectif h4{
+    font-size: 4rem;
+    font-weight: 700;
 }
-@keyframes cand{
+
+.showcase .showcase-content .mission span,
+.showcase .showcase-content .objectif span{
+   font-size: 1.1rem;
+   line-height: 2;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase .showcase-content .mission,
+.showcase .showcase-content .objectif{
+    animation: slider 6s forwards ease-in-out;
+}
+
+
+@keyframes slider{
     from{
-        transform: translate(0,-10px);
+        transform: translate(0,-400px);
     }
     to{
-        transform: translate(0,90px);
+        transform: translate(0,0);
     }
 }
 
-.big-line{
-    width: 100%;
-    height: 6px;
-    background: #f6f6f6;
-
-}
-
-.second-part{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    /* grid-gap: 0.7rem; */
-    width: 100%;
-    height: 100%;
-    font-family: 'Open Sans Condensed', sans-serif !important;
-}
-
-.content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 0;
-    animation: cand 1s forwards ease-in-out;
-    font-family: 'Open Sans Condensed', sans-serif !important;
-    
-}
-
-.content p,
-.paragraph-showcase-content span{
-    font-weight: 300;
-    font-size: 1.3rem;
-    padding: 2rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-    line-height: 2;
-}
 
 /*timeline*/
 /* #timeline{
@@ -290,37 +273,31 @@ h1,h2,h3,h4{
 /*Make it Completely Responsive*/
 
 @media(max-width:768px){
-    .second-part{
-        grid-template-columns: 1fr;
+
+    .showcase .showcase-content{
+        flex-direction: column;
+    }
+   
+
+    .showcase .showcase-content .mission,
+    .showcase .showcase-content .objectif{
+        width: 600px;
+        height: 100%;
+        /* background: coral; */
+        margin-top: 1rem;
     }
 
-    .showcase-content {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .showcase .showcase-container > h4{
+        width: 30%;
+        background: #317ec7;
     }
-
-    .showcase-content h1{
-        float: left;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 20px;
-        left: 150px;
-
-    }
+  
     
 }
 
 @media(max-width:900px){
 
-    .showcase .showcase-container {
-        left: 230px;
-        top: 380px;
-        width: 50%;
-    }
+  
     #timeline ul li div{
         width: 252px;
     }
@@ -351,20 +328,21 @@ h1,h2,h3,h4{
 
 @media(max-width: 600px){
 
-    .showcase .showcase-container {
-        left: 50px;
-        top: 380px;
-        width: 80%;
+    .showcase .showcase-content .mission,
+    .showcase .showcase-content .objectif{
+        width: 100%;
+        background: #e74a3b;
     }
 
-    .showcase-content h1{
-        left: 50px;
+    .showcase .showcase-container > h4{
+        width: 40%;
     }
-
-    .paragraph-showcase::before,
-    .paragraph-showcase{
+    .showcase ,
+    .showcase::before{
         height: 70vh;
     }
+
+
 
 
     #timeline ul li{

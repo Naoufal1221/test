@@ -92,11 +92,15 @@ span{
     padding: 0.5rem 0;
 
 }
+.Sides .leftSide .form-contact h4{
+    color: #c4302b;
+}
 
 .Sides .leftSide .form-contact i{
     padding:0  0.5rem;
     align-self: center;
     text-align: center;
+    color: #333;
 }
 
 .Sides .leftSide .form-contact span{
