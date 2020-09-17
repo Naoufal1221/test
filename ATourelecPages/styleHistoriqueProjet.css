@@ -133,13 +133,31 @@ h1,h2,h3,h4{
     }
 }
 
+.showcase + h1{
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    text-align: center;
+    font-size: 3rem;
+}
+
 
 /*timeline*/
 /* #timeline{
 
 } */
+
+#timeline{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    grid-gap: 3rem;
+    background: #f4f4f4;
+    padding: 1rem 0;
+}
 #timeline ul{
-    background: #fff;
+    background: #f3f3f3;
     padding: 50px 0;
 }
 
@@ -150,7 +168,7 @@ h1,h2,h3,h4{
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
-    background: #f6f6f6;
+    background: #e1e1e1;
 }
 
 /* Boxes*/
@@ -171,15 +189,21 @@ h1,h2,h3,h4{
 
 /*Positionning the Boxes*/
 
-#timeline ul li:nth-child(odd) div{
+#timeline ul:last-child li div{
     left: 40px;
     transform: translateX(200px);
 }
-
-#timeline ul li:nth-child(even) div{
+#timeline ul:first-child li div{
     left: -434px;
     transform: translateX(-200px);
 }
+
+
+
+/* #timeline ul li:nth-child(even) div{
+    left: -434px;
+    transform: translateX(-200px);
+} */
 
 /*Dots */
 
@@ -190,7 +214,7 @@ h1,h2,h3,h4{
     bottom: 0;
     width: 25px;
     height: 25px;
-    background:#e3e3e3;
+    background:#888;
     transform: translateX(-50%);
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
@@ -209,56 +233,91 @@ h1,h2,h3,h4{
 
 /*Right Side Arrows*/
 
-#timeline ul li:nth-child(odd) div:after{
+#timeline ul:last-child li div:after{
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #444 transparent transparent;
 }
-#timeline ul li:first-child div:after{
+#timeline ul:last-child li:nth-child(1) div:after{
     border-color: transparent #20c9a6 transparent transparent;
 }
-
-#timeline ul li:nth-child(3) div:after{
-    border-color: transparent #e74a3b transparent transparent;
-}
-
-#timeline ul li:nth-child(5) div:after{
+#timeline ul:last-child li:nth-child(2) div:after{
     border-color: transparent #317ec7 transparent transparent;
 }
 
-#timeline ul li:nth-child(7) div:after{
+#timeline ul:last-child li:nth-child(3) div:after{
+    border-color: transparent #e74a3b transparent transparent;
+}
+#timeline ul:last-child li:nth-child(4) div:after{
+    border-color: transparent #f6c23e transparent transparent;
+}
+
+#timeline ul:last-child li:nth-child(5) div:after{
+    border-color: transparent #317ec7 transparent transparent;
+}
+#timeline ul:last-child li:nth-child(6) div:after{
     border-color: transparent #e74a3b transparent transparent;
 }
 
-#timeline ul li:nth-child(9) div:after{
+#timeline ul:last-child li:nth-child(7) div:after{
+    border-color: transparent #e74a3b transparent transparent;
+}
+#timeline ul:last-child li:nth-child(8) div:after{
+    border-color: transparent #20c9a6 transparent transparent;
+}
+
+#timeline ul:last-child li:nth-child(9) div:after{
     border-color: transparent #f6c23e transparent transparent;
+}
+#timeline ul:last-child li:nth-child(10) div:after{
+    border-color: transparent #20c9a6 transparent transparent;
 }
 
 
 
 /*Left Side Arrows*/
-#timeline ul li:nth-child(even) div:after{
+
+
+#timeline ul:first-child li div:after{
     right: -15px;
-    border-width: 8px 0px 8px 16px;
+    border-width: 8px 0px 8px 16px; 
+}
+#timeline ul:first-child li:nth-child(1) div:after{
+  
     border-color:transparent transparent transparent  #317ec7;
 }
-
-#timeline ul li:nth-child(4) div:after{
+#timeline ul:first-child li:nth-child(2) div:after{
   
-    border-color:transparent transparent transparent  #f6c23e;
+    border-color:transparent transparent transparent  #e74a3b;
 }
-
-#timeline ul li:nth-child(6) div:after{
+#timeline ul:first-child li:nth-child(3) div:after{
   
     border-color:transparent transparent transparent  #e74a3b;
 }
 
-#timeline ul li:nth-child(8) div:after{
+#timeline ul:first-child li:nth-child(4) div:after{
   
     border-color:transparent transparent transparent  #20c9a6;
 }
+#timeline ul:first-child li:nth-child(5) div:after{
+  
+    border-color:transparent transparent transparent  #f6c23e;
+}
 
-#timeline ul li:nth-child(10) div:after{
+#timeline ul:first-child li:nth-child(6) div:after{
+  
+    border-color:transparent transparent transparent  #317ec7;
+}
+#timeline ul:first-child li:nth-child(7) div:after{
+  
+    border-color:transparent transparent transparent  #e74a3b;
+}
+
+#timeline ul:first-child li:nth-child(8) div:after{
+  
+    border-color:transparent transparent transparent  #e74a3b;
+}
+
+#timeline ul:first-child li:nth-child(9) div:after{
   
     border-color:transparent transparent transparent  #20c9a6;
 }
@@ -302,7 +361,7 @@ h1,h2,h3,h4{
         width: 252px;
     }
 
-    #timeline ul li:nth-child(even) div{
+    #timeline ul:first-child li div{
         left: -282px;
     }
     
@@ -343,7 +402,9 @@ h1,h2,h3,h4{
     }
 
 
-
+    #timeline{
+        flex-direction: column;
+    }
 
     #timeline ul li{
         margin-left: 20px;
@@ -353,15 +414,61 @@ h1,h2,h3,h4{
         width: calc(100vw -90px);
     }
 
-    #timeline ul li:nth-child(even) div{
+    #timeline ul:first-child li div{
         left: 40px;
+    }
+    #timeline ul:first-child li div:after{
+        right: 252px;
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+    }
+
+    #timeline ul:first-child li:nth-child(1) div:after{
+  
+        border-color: transparent #317ec7 transparent transparent;
+    }
+    #timeline ul:first-child li:nth-child(2) div:after{
+      
+        border-color:transparent #e74a3b transparent transparent ;
+    }
+    #timeline ul:first-child li:nth-child(3) div:after{
+      
+        border-color:transparent #e74a3b transparent transparent;
+    }
+    
+    #timeline ul:first-child li:nth-child(4) div:after{
+      
+        border-color:transparent #20c9a6 transparent transparent ;
+    }
+    #timeline ul:first-child li:nth-child(5) div:after{
+      
+        border-color:transparent #f6c23e transparent transparent  ;
+    }
+    
+    #timeline ul:first-child li:nth-child(6) div:after{
+      
+        border-color:transparent #317ec7 transparent transparent  ;
+    }
+    #timeline ul:first-child li:nth-child(7) div:after{
+      
+        border-color:transparent #e74a3b transparent  transparent;
+    }
+    
+    #timeline ul:first-child li:nth-child(8) div:after{
+      
+        border-color:transparent #e74a3b transparent transparent;
+    }
+    
+    #timeline ul:first-child li:nth-child(9) div:after{
+      
+        border-color:transparent #20c9a6 transparent  transparent;
     }
 
     /**/
     
     /**/
     
-    #timeline ul li:nth-child(2) div:after{
+    /* #timeline ul li:nth-child(2) div:after{
         right: 250px;
         border-width: 8px 16px 8px 0;
         border-color:transparent #317ec7 transparent transparent;
@@ -385,7 +492,7 @@ h1,h2,h3,h4{
         right: 250px;
         border-width: 8px 16px 8px 0;
         border-color: transparent #20c9a6 transparent transparent;
-    }
+    } */
   
 }
  

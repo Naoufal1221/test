@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 *{
     padding: 0;
@@ -52,7 +53,7 @@ body{
     color: #fff;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 40vh;
    
 }
 .showcase::before{
@@ -62,35 +63,11 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     opacity: 0.7;
-    animation: slide 20s infinite ;
-    animation-delay: 2s;
 }
 
-@keyframes slide{
-    25%{
-        background: url('./img/Page\ Qualité/Page0Photo4.jpg')  no-repeat center center/cover;
-        width: 100%;
-        height: 100vh;
-    }
-    /* 50%{
-        background: url('./img/Page\ Qualité/Page7Photo3.jpg')  no-repeat center center/cover;
-        width: 100%;
-        height: 100vh;
-    } */
-    75%{
-        background: url('./img/Page\ Qualité/PHOTO MASEN 2.JPG')  no-repeat center center/cover;
-        width: 100%;
-        height: 100vh;
-    }
-    100%{
-        background: url('./img/Page\ Qualité/PHOTO MASEN 3.JPG')  no-repeat center center/cover;
-        width: 100%;
-        height: 100vh;
-    }
-  
-}
+
 
 .showcase .showcase-content{
     display: flex;
@@ -113,20 +90,40 @@ body{
         transform: translate(0,-10px);
     }
     to{
-        transform: translate(0,350px);
+        transform: translate(0,40px);
     }
 }
  
 
- .title-quality{
-     padding: 0.7rem 0;
-    background: #5C95CB;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    color: #f6f6f6;
-    font-style: oblique;
-    padding: 2rem 0;
+ .stats{
+     background: #e3e3e3;
+     height: 25vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ .item{
+     text-align: center;
+     margin-right: 6rem;
+     padding: 2rem 0;
+ }
+ .item:last-child{
+     margin-right: 0;
+ }
+
+ .item i{
+     color: #333;
+     font-size: 4rem;
+     margin-bottom: 0.7rem;
+ }
+ .item h4{
+     color: #c4302b;
+     font-size: 1.2rem;
+     padding: 0 2rem;
  }
 
  .line{
@@ -153,7 +150,12 @@ body{
     margin: 0 auto;
     padding-top: 50px;
     background: #e3e3e3;
-}
+ }
+ span{
+     font-size: 1.1rem;
+     /* font-weight: bold; */
+     font-family: 'Roboto Condensed', sans-serif;
+ }
 
 .time-ul ul:first-child li::after{
     content: '';
@@ -177,7 +179,6 @@ body{
     color: #fff;
     /* opacity: 0; */
     border-radius: 10px;
-    font-family: 'Lato', sans-serif;
     margin-left: 1.3rem;
 }
 
@@ -247,5 +248,14 @@ body{
     }
 
     .links a:nth-child(6){border: none;}
+
+    .stats{
+        flex-direction: column;
+        height: 100%;
+        padding: 0.7rem 0;
+    }
+    .item{
+        margin-right: 0;
+    }
 }
 
