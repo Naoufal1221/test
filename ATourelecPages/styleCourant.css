@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #347AB7;
+    background: #edf1f7;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
 }
@@ -318,6 +318,10 @@ body{
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* carousal */
+
+/*  */
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {

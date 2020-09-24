@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-
+/* 
 body{
     background: #138FD6;
     line-height: 1.7;
@@ -12,7 +12,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
 
 h1,h2,h3,h4{
@@ -40,7 +40,7 @@ ul{
     border: none;
     overflow: hidden;
     width: 100%;
-    background: #347AB7;
+    background: #edf1f7;
     
 }
 
@@ -82,7 +82,7 @@ ul{
     padding: 0 1rem ;
     font-size: 1.4rem;
     /* color: #347AB7; */
-    color: #f6f6f6;
+    color: #347AB7;
     transform: translate(0,0);
     transition: all 0.3s ease;
 }
@@ -106,14 +106,14 @@ ul{
     height: 3px;
     margin: 0 0 5px 0;
     /* background: #3b5998; */
-    background: #f6f6f6;
+    background: #347AB7;
     transition: all 0.3s ease-in-out;
 }
 
 .right-side h4{
     margin: 0 1rem 0 2rem;
     /* color: #138FD6; */
-    color: #f6f6f6;
+    color: #347AB7;
 }
 
 .right-side .languages{
@@ -139,7 +139,7 @@ option:focus{
 }
 .close .btn-line:nth-child(1){
     transform: rotate(45deg) translate(5px,5px);
-    background: #fff;
+    background: #347AB7;
 }
 /* line 2*/
 .close .btn-line:nth-child(2){
@@ -149,7 +149,7 @@ option:focus{
 /* line 3*/
 .close .btn-line:nth-child(3){
     transform: rotate(-45deg) translate(7px,-6px);
-    background: #fff;
+    background: #347AB7;
 }
 
 /*Menu*/
@@ -177,7 +177,7 @@ option:focus{
     padding: 8rem 2rem;
     overflow: hidden;
     list-style: none;
-    background:#347AB7;
+    background:#edf1f7;
      transform: translate3d(100%,0,0); 
     transition: all 0.9s ease-out;
 }
@@ -192,7 +192,7 @@ option:focus{
 
 .nav-item > a{
     font-size: 40px;
-    color:#f6f6f6;
+    color:#347AB7;
     padding: 0 2rem;
     transform: translate(0,0);
     transition: transform 0.5s ease-in-out;
@@ -205,7 +205,7 @@ option:focus{
 .nav-item > a:hover,
 .nav-item:hover
 {
-    color: #444;
+    color: #347AB7;
     transform: translate(10px,0);
 }
 
@@ -238,11 +238,11 @@ option:focus{
  .link-item,
  .sous-link{
     font-family: 'Roboto Condensed', sans-serif;
-    color: #f6f6f6;
+    color: #347AB7;
     width: 100%;
     transition: color 0.3s ease;
 }
-.sous-link > a{color: #f6f6f6 !important;}
+.sous-link > a{color: #347AB7 !important;}
 
 .sous-link > a::before{
     content: '+';

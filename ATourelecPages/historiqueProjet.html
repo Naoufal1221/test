@@ -5,17 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet"  href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)"  href="navbar.css">
     <link rel="stylesheet" href="styleHistoriqueProjet.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- navbar -->
     <header id="main-header">
-        <div class="container-header">
-            <a href="index.html" class="left-side">
+        <!-- first -->
+        <nav id="navbar">
+            <a href="#" class="logo-company">
                 <img src="./img/logo.png" alt="">
             </a>
+            <ul>
+                <li class=first-li>  <span> Nous connaitre</span> <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="MotPresident.html">Mot du Président</a></li>
+                        <li><a href="Presentation.html">Qui sommes-nous</a></li>
+                        <li><a href="historiqueProjet.html">Historique</a></li>
+                        <li><a href="Internationnal.html">Notre Presence en Afrique</a></li>
+                        <li class="inner">Qualité et Securité<i class="fas fa-angle-right"></i>
+                            <ul>
+                                <li><a href="Quality.html">Qualité</a></li>
+                                <li><a href="Security.html">Securité</a></li>
+                                <li><a href="Environnement.html">Environnement</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="first-li">Nos Activités <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Courants.html">Courant Fort / Courant Faible</a></li>
+                        <li><a href="climatisationPlomberie.html">Climatisation / Plomberie</a></li>
+                        <li><a href="TransportEnergie.html">Transport d'énergie</a></li>
+                        <li><a href="TableauElectrique.html">Tableau Electrique</a></li>
+                        <li><a href="EnergieRenouvelable.html">Energie Renouvelable</a></li>
+                        <li><a href="Maintenance.html">Maintenance</a></li>
+                        
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="first-li">Nos Projet <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Chantier.html">Chantier</a></li>
+                        <li><a href="ProjetRealiser.html">Realisations</a></li> 
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="first-li link"><a href="NosMarques.html">Client</a></li>
+                <li class="first-li link"><a href="Contact.html">Contact</a></li>
+                <li class="first-li link"><a href="Candidature.html">Emploi et Carriére</a></li>
+                <li class="first-li">Actualité et Médias <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Actualite.html">Actualité</a></li>
+                        <li><a href="#">médias</a></li> 
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <!--  -->
+        <div class="container-header">
+            <section class="left-side">
+                <img src="./img/logo.png" alt="">
+            </section>
 
             <section class="right-side">
                 <!-- icon Section -->
@@ -160,11 +215,11 @@
 
                      <!-- third Sous list  -->
                      <li class="nav-item sous-list">
-                        <a id="fourth" href="projets.html">Nos Projets</a> 
+                        <a id="fourth" href="#">Nos Projets</a> 
                         <div class="invisible-line"></div>
                         <ul class="inner-item">
                             <li>
-                                <a class="link-item" href="Chantier.html">
+                                <a class="link-item" href="#">
                                     Nos Chantiers
                                 </a>
                             </li>
@@ -214,7 +269,7 @@
                 <h4>Historique des projets </h4>
                 <div class="showcase-content">
                     <!-- <h1>Historique des projets</h1> -->
-                    <div class="mission">
+                    <!-- <div class="mission">
                         <h1>NOTRE MISSION</h1>
                     <span>Etablir des relations à long terme avec nos clients et fournir une qualité
                          exceptionnelle et des services à la clientèle en poursuivant les activités grâce
@@ -225,11 +280,25 @@
                     <span>Etablir des relations à long terme avec nos clients et fournir une qualité
                          exceptionnelle et des services à la clientèle en poursuivant les activités grâce
                           à l'innovation, la créativité et la technologie de pointe.</span>
-                    </div>
+                    </div> -->
                     
                 </div>
             </div>
         </div>
+            <div class="speech">
+                <div class="missions">
+                    <h1>NOTRE MISSION</h1>
+                    <span>Etablir des relations à long terme avec nos clients et fournir une qualité
+                         exceptionnelle et des services à la clientèle en poursuivant les activités grâce
+                          à l'innovation, la créativité et la technologie de pointe.</span>
+                </div>
+                <div class="objectifs">
+                    <h1>NOTRE OBJECTIF</h1>
+                    <span>Être un leader dans l'industrie de l'installation électrique en offrant des services de haute qualité,
+                         des relations et une rentabilité améliorés..</span>
+                </div>
+            </div>
+
         <h1>Historique</h1>
         <section id="timeline">
             <ul>
@@ -387,6 +456,13 @@
                     <div style="background : #20c9a6">
                         <h3><i class="fas fa-chevron-right"></i> 2000</h3>
                         <h4>Thompson Electronique</h4>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div style="background : #317ec7">
+                        <h3><i class="fas fa-chevron-right"></i> 1995</h3>
+                        <h4>Création de TOURELEC .</h4>
                         
                     </div>
                 </li>

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 body{
-    background: #347AB7;
+    background: #edf1f7;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -85,43 +85,19 @@ h1,h2,h3,h4{
     position: relative;
     z-index: 1;
 }
-.showcase .showcase-content .mission,
-.showcase .showcase-content .objectif{
-    width: 700px;
-    height: 100%;
-    margin: 5rem 1rem 0 1rem;
-    background: #5C95CB;
-    opacity: 0.8;
-    padding: 0 2rem 1rem 2rem;
-    border-radius: 7px;
-    transition: all 0.4s ease;
-   
-}
 
-.showcase .showcase-content .mission:hover,
-.showcase .showcase-content .objectif:hover,
+
+
 .showcase .showcase-container > h1:hover{
     opacity: 1;
 }
 
 
-.showcase .showcase-content .mission h4,
-.showcase .showcase-content .objectif h4{
-    font-size: 4rem;
-    font-weight: 700;
-}
 
-.showcase .showcase-content .mission span,
-.showcase .showcase-content .objectif span{
-   font-size: 1.1rem;
-   line-height: 2;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-.showcase .showcase-content .mission,
-.showcase .showcase-content .objectif{
-    animation: slider 6s forwards ease-in-out;
-}
+
+
+
 
 
 @keyframes slider{
@@ -133,19 +109,38 @@ h1,h2,h3,h4{
     }
 }
 
-.showcase + h1{
+.speech + h1{
     width: 100%;
     height: 100%;
-    background: #f4f4f4;
+    background: #fff;
     text-align: center;
     font-size: 3rem;
 }
 
+.speech{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+}
 
-/*timeline*/
-/* #timeline{
+.missions,
+.objectifs{
+    padding: 0 5rem;
+    border-right: #317ec7 3px solid;
+}
+.objectifs{
+    border-right: none;
+}
 
-} */
+.missions h1,
+.objectifs h1{
+    text-align: center;
+    margin-bottom: 0.7rem;
+}
+
 
 #timeline{
     display: flex;
@@ -153,7 +148,7 @@ h1,h2,h3,h4{
     height: 100%;
     justify-content: center;
     grid-gap: 3rem;
-    background: #f4f4f4;
+    background: #fff;
     padding: 1rem 0;
 }
 #timeline ul{
@@ -270,6 +265,9 @@ h1,h2,h3,h4{
 }
 #timeline ul:last-child li:nth-child(10) div:after{
     border-color: transparent #20c9a6 transparent transparent;
+}
+#timeline ul:last-child li:nth-child(11) div:after{
+    border-color: transparent #317ec7 transparent transparent;
 }
 
 

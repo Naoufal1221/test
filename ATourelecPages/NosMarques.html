@@ -5,208 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet"  href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)"  href="navbar.css">
     <link rel="stylesheet" href="styleNosMarques.css">
     <title>Tourelec | Activités</title>
 </head>
 <body>
-        <!-- navbar -->
-        <header id="main-header">
-            <div class="container-header">
-                <a href="index.html" class="left-side">
-                    <img src="./img/logo.png" alt="">
-                </a>
-    
-                <section class="right-side">
-                    <!-- icon Section -->
-                    <div class="social-icons">
-                        <a  class="link-item" href="https://twitter.com/">
-                            <i class="fab fa-twitter fa-1x"></i>
-                        </a>
-                        <a  class="link-item" href="https://youtube.com/">
-                            <i class="fab fa-youtube fa-1x"></i>
-                        </a>
-                        <a  class="link-item " href="https://facebook.com/">
-                            <i class="fab fa-facebook-f fa-1x"></i>
-                        </a>
-                        <a  class="link-item " href="https://instagram.com/">
-                            <i class="fab fa-instagram fa-1x"></i>
-                        </a>
-                        <a  class="link-item " href="https://linkedin.com/">
-                            <i class="fab fa-linkedin-in fa-1x"></i>
-                        </a>
-                    </div>
-                    <!-- icon Section -->
-                    <!-- languages -->
-                    <div class="languages">
-                        <select name="langages" id="lang">
-                            <option value="Francais">Fr</option>
-                            <option value="Anglais">An</option>
-                        </select>
-                    </div>
-                    <!--  -->
-                    <!-- Hamburger menu -->
-                    <h4>M E N U</h4>
-                    <div class="hamburger-menu">
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                        <div class="btn-line"></div>
-                    </div>
-                    <!--  -->
-                </section>
-                <!-- Menu Setting -->
-                <nav class="menu">
-                    <ul class="menu-nav">
-                        <!-- first linked item -->
-                        
-                        <li class="nav-item sous-list">
-                            <a id="first" href="#">Nous connaitre</a>
-                            <div class="invisible-line"></div>
-                            <ul class="inner-item">
-                                <li>
-                                        <a class="link-item" href="MotPresident.html">
-                                            Mot du president 
-                                        </a>
-                                </li>
-                                <!--  -->
-                                <li>
-                                        <a class="link-item" href="Presentation.html">
-                                           Qui sommes nous ?
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                <li>
-                                        <a class="link-item" href="historiqueProjet.html">
-                                          Historique
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                <li>
-                                        <a class="link-item" href="Internationnal.html">
-                                          Notre présence en afrique
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <!-- Sous sous Liste -->
-                                 <li class="sous-link sous-list">
-                                    <a id="second" href="#">Qualité securité environement</a>
-                                    <div class="invisible-line"></div>
-                                    <ul class="inner-item">
-                                        <li>
-                                            <a class="link-item" href="Quality.html">
-                                              Qualité
-                                            </a>
-                                     </li>
-                                     <!--  -->
-                                        <li>
-                                            <a class="link-item" href="Security.html">
-                                              Sécurité
-                                            </a>
-                                     </li>
-                                     <!--  -->
-                                        <li>
-                                            <a class="link-item" href="Environnement.html">
-                                              Environement
-                                            </a>
-                                     </li>
-                                     <!--  -->
-                                    </ul>
-    
+    <header id="main-header">
+        <!-- first -->
+        <nav id="navbar">
+            <a href="#" class="logo-company">
+                <img src="./img/logo.png" alt="">
+            </a>
+            <ul>
+                <li class=first-li>  <span> Nous connaitre</span> <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="MotPresident.html">Mot du Président</a></li>
+                        <li><a href="Presentation.html">Qui sommes-nous</a></li>
+                        <li><a href="historiqueProjet.html">Historique</a></li>
+                        <li><a href="Internationnal.html">Notre Presence en Afrique</a></li>
+                        <li class="inner">Qualité et Securité<i class="fas fa-angle-right"></i>
+                            <ul>
+                                <li><a href="Quality.html">Qualité</a></li>
+                                <li><a href="Security.html">Securité</a></li>
+                                <li><a href="Environnement.html">Environnement</a></li>
                             </ul>
+
                         </li>
-    
-                        <li class="nav-item sous-list">
-                            <a  id="third" href="#" >Nos Activités</a>
-                            <div class="invisible-line"></div>
-                             <ul class="inner-item">
-                                 <li>
-                                     <a  class="link-item " href="Courants.html">
-                                         Courant Fort / Courant Faible
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <li>
-                                     <a  class="link-item " href="climatisationPlomberie.html">
-                                         Climatisation / Plomberie
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <li>
-                                     <a  class="link-item " href="TransportEnergie.html">
-                                         Transport d'energie
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <li>
-                                     <a  class="link-item " href="TableauElectrique.html">
-                                         Tableaux Electrique
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <li>
-                                     <a  class="link-item " href="EnergieRenouvelable.html">
-                                         Energies Renouvelables
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                                 <li>
-                                     <a  class="link-item " href="Maintenance.html">
-                                        Maintenance
-                                        </a>
-                                 </li>
-                                 <!--  -->
-                             </ul>
-                         </li>
-    
-                         <!-- third Sous list  -->
-                         <li class="nav-item sous-list">
-                            <a id="fourth" href="projets.html">Nos Projets</a> 
-                            <div class="invisible-line"></div>
-                            <ul class="inner-item">
-                                <li>
-                                    <a class="link-item" href="Chantier.html">
-                                        Nos Chantiers
-                                    </a>
-                                </li>
-                                <!--  -->
-                                <li>
-                                    <a class="link-item" href="ProjetRealiser.html">
-                                        Nos Réalisations
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-    
-                        <!--  -->
-                        <!-- second linked item -->
-                        <li class="nav-item ">
-                            <a href="NosMarques.html">
-                                Clients
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Contact.html">
-                                Contact
-                            </a>
-                        </li>
-                        <!--  -->
-                        <li class="nav-item">
-                            <a href="Actualite.html">
-                                Actualité et Medias
-                            </a>
-                        </li>
-                        <!--  -->
-                        <li class="nav-item">
-                            <a href="Candidature.html">
-                                Emploi et Carriére
-                            </a>
-                        </li>
-                        <!--  -->
                     </ul>
-                </nav>
-               
-            </div>
-        </header>
+                </li>
+                <!--  -->
+                <li class="first-li">Nos Activités <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Courants.html">Courant Fort / Courant Faible</a></li>
+                        <li><a href="climatisationPlomberie.html">Climatisation / Plomberie</a></li>
+                        <li><a href="TransportEnergie.html">Transport d'énergie</a></li>
+                        <li><a href="TableauElectrique.html">Tableau Electrique</a></li>
+                        <li><a href="EnergieRenouvelable.html">Energie Renouvelable</a></li>
+                        <li><a href="Maintenance.html">Maintenance</a></li>
+                        
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="first-li">Nos Projet <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Chantier.html">Chantier</a></li>
+                        <li><a href="ProjetRealiser.html">Realisations</a></li> 
+                    </ul>
+                </li>
+                <!--  -->
+                <li class="first-li link"><a href="NosMarques.html">Client</a></li>
+                <li class="first-li link"><a href="Contact.html">Contact</a></li>
+                <li class="first-li link"><a href="Candidature.html">Emploi et Carriére</a></li>
+                <li class="first-li">Actualité et Médias <i class="fas fa-angle-down"></i>
+                    <ul class="first-list">
+                        <li><a href="Actualite.html">Actualité</a></li>
+                        <li><a href="#">médias</a></li> 
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+        <!--  -->
+        <div class="container-header">
+            <section class="left-side">
+                <img src="./img/logo.png" alt="">
+            </section>
+
+            <section class="right-side">
+                <!-- icon Section -->
+                <div class="social-icons">
+                    <a  class="link-item" href="https://twitter.com/">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </a>
+                    <a  class="link-item" href="https://youtube.com/">
+                        <i class="fab fa-youtube fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="https://facebook.com/">
+                        <i class="fab fa-facebook-f fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="https://instagram.com/">
+                        <i class="fab fa-instagram fa-1x"></i>
+                    </a>
+                    <a  class="link-item " href="https://linkedin.com/">
+                        <i class="fab fa-linkedin-in fa-1x"></i>
+                    </a>
+                </div>
+                <!-- icon Section -->
+                <!-- languages -->
+                <div class="languages">
+                    <select name="langages" id="lang">
+                        <option value="Francais">Fr</option>
+                        <option value="Anglais">An</option>
+                    </select>
+                </div>
+                <!--  -->
+                <!-- Hamburger menu -->
+                <h4>M E N U</h4>
+                <div class="hamburger-menu">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+                <!--  -->
+            </section>
+            <!-- Menu Setting -->
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <!-- first linked item -->
+                    
+                    <li class="nav-item sous-list">
+                        <a id="first" href="#">Nous connaitre</a>
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                    <a class="link-item" href="MotPresident.html">
+                                        Mot du president 
+                                    </a>
+                            </li>
+                            <!--  -->
+                            <li>
+                                    <a class="link-item" href="Presentation.html">
+                                       Qui sommes nous ?
+                                    </a>
+                             </li>
+                             <!--  -->
+                            <li>
+                                    <a class="link-item" href="historiqueProjet.html">
+                                      Historique
+                                    </a>
+                             </li>
+                             <!--  -->
+                            <li>
+                                    <a class="link-item" href="Internationnal.html">
+                                      Notre présence en afrique
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <!-- Sous sous Liste -->
+                             <li class="sous-link sous-list">
+                                <a id="second" href="#">Qualité securité environement</a>
+                                <div class="invisible-line"></div>
+                                <ul class="inner-item">
+                                    <li>
+                                        <a class="link-item" href="Quality.html">
+                                          Qualité
+                                        </a>
+                                 </li>
+                                 <!--  -->
+                                    <li>
+                                        <a class="link-item" href="Security.html">
+                                          Sécurité
+                                        </a>
+                                 </li>
+                                 <!--  -->
+                                    <li>
+                                        <a class="link-item" href="Environnement.html">
+                                          Environement
+                                        </a>
+                                 </li>
+                                 <!--  -->
+                                </ul>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item sous-list">
+                        <a  id="third" href="#" >Nos Activités</a>
+                        <div class="invisible-line"></div>
+                         <ul class="inner-item">
+                             <li>
+                                 <a  class="link-item " href="Courants.html">
+                                     Courant Fort / Courant Faible
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <li>
+                                 <a  class="link-item " href="climatisationPlomberie.html">
+                                     Climatisation / Plomberie
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <li>
+                                 <a  class="link-item " href="TransportEnergie.html">
+                                     Transport d'energie
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <li>
+                                 <a  class="link-item " href="TableauElectrique.html">
+                                     Tableaux Electrique
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <li>
+                                 <a  class="link-item " href="EnergieRenouvelable.html">
+                                     Energies Renouvelables
+                                    </a>
+                             </li>
+                             <!--  -->
+                             <li>
+                                 <a  class="link-item " href="Maintenance.html">
+                                    Maintenance
+                                    </a>
+                             </li>
+                             <!--  -->
+                         </ul>
+                     </li>
+
+                     <!-- third Sous list  -->
+                     <li class="nav-item sous-list">
+                        <a id="fourth" href="#">Nos Projets</a> 
+                        <div class="invisible-line"></div>
+                        <ul class="inner-item">
+                            <li>
+                                <a class="link-item" href="#">
+                                    Nos Chantiers
+                                </a>
+                            </li>
+                            <!--  -->
+                            <li>
+                                <a class="link-item" href="ProjetRealiser.html">
+                                    Nos Réalisations
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--  -->
+                    <!-- second linked item -->
+                    <li class="nav-item ">
+                        <a href="NosMarques.html">
+                            Clients
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item">
+                        <a href="Actualite.html">
+                            Actualité et Medias
+                        </a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item">
+                        <a href="Candidature.html">
+                            Emploi et Carriére
+                        </a>
+                    </li>
+                    <!--  -->
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
         <!--  -->
     <div class="container">
 

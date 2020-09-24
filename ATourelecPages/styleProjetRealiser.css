@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #347AB7;
+    background: #edf1f7;
     line-height: 1.7;
     font-family: 'Roboto', sans-serif;
 }
@@ -375,10 +375,9 @@ body{
         margin-left: 3rem;
     }
 
-    
-
-    
-    
+    .projects{
+        grid-template-columns: 1fr;
+    }
 }
 
 /*Responsive*/
