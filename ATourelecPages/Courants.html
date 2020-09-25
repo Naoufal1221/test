@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet"  href="widescreen.css">
@@ -294,89 +295,55 @@
     </div>
         <h2>Tourelec est l'un des leaders au Maroc dans le secteurs </h2>
         <div class="line"></div>
-    <div class="Side-menu">
-        <div class="left-side-menu">
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>L'électricité d'infrastructure et secteurs industriels</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Courant Faible et secteurs tertiaires</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Eclairage</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Automatisation</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Vidéosurveillance</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Controle d'accés</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Pré-cablage informatique</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Domotique</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Gestion Technique Centralisée</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Détection Incendie</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Groupes Electrogénes</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Postes Transformation MT/BT</h4>
-            </div>
-            <div>
-                <i class="fas fa-check-circle"></i>
-                <h4>Sonorisation et acoustique</h4>
-            </div>
-        </div>
-        <div class="right-side-menu">
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 2</div>
-                <img src="./img/courant/Page4Photo1.jpg" style="width:100%;height: 100%;">
-                <div class="text">Image 1</div>
-              </div>
-              
-              <div class="mySlides fade">
-                <div class="numbertext">2 / 2</div>
-                <img src="./img/courant/Page 4 Photo 2.JPG" style="width:100%; height: 100%;">
-                <div class="text">Image 2</div>
-              </div>
-              
-             
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-        </div>
-
+<!-- Carousal -->
+<div class="carousel">
+    <div class="carousel__nav">
+     <span id="moveLeft" class="carousel__arrow">
+          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg>
+      </span>
+      <span id="moveRight" class="carousel__arrow" >
+        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg>    
+      </span>
     </div>
-
-
+    <div class="carousel-item carousel-item--1">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Courant Fort</h1>
+        <p class="carousel-item__description">Eclairage.</p>
+        <p class="carousel-item__description">L'électricité d'infrastructure et secteurs industriels . </p>
+        <p class="carousel-item__description">Courant Faible et secteurs tertiaires . </p>
+        <p class="carousel-item__description">Automatisation. </p>
+        <p class="carousel-item__description">Vidéosurveillance. </p>
+        <p class="carousel-item__description">Controle d'accés. </p>
+        
+       
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--2">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Courant Faible</h1>
+        <p class="carousel-item__description">Pré-cablage informatique .</p>
+        <p class="carousel-item__description">Domotique .</p>
+        <p class="carousel-item__description">Gestion Technique Centralisée .</p>
+        <p class="carousel-item__description">Détection Incendie . </p>
+        <p class="carousel-item__description">Groupes Electrogénes. </p>
+        <p class="carousel-item__description">Postes Transformation MT/BT. </p>
+        <p class="carousel-item__description">Sonorisation et acoustique. </p>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--  -->
 <footer id="main-footer" class="py-2">
@@ -395,6 +362,7 @@
     </div>
 
 </footer>
+<script src="carousal.js"></script>
     <script src="slider.js"></script>
       <script src="script.js"></script>
     </body>

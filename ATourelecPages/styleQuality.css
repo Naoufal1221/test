@@ -23,7 +23,7 @@ body{
 }
 .links{
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +47,126 @@ body{
 .links a:hover{
     transform: translate(0,-5px);
 }
+/* Slider image */
+.slider {
+    margin: 0 auto;
+    /* max-width: 1100px; */
+    width: 100%;
+    height: 100%;
+    /* height: 800px; */
+  }
+  
+  .slide_viewer {
+    height: 800px;  
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group {
+    height: 800px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: none;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide:nth-of-type(1) {
+    background: url('./img/Page\ Qualité/Page0Photo3.jpg') no-repeat center center/cover;
 
-.showcase{
+  }
+  
+  .slide:nth-of-type(2) {
+    background: url('./img/Qui\ sommes-nous/CV7B6082.jpg') no-repeat center center/cover;
+
+  }
+  
+  .slide:nth-of-type(3) {
+    background: url('./img/Qui\ sommes-nous/CV7B6084.jpg') no-repeat center center/cover;
+
+  }
+  
+  .slide:nth-of-type(4) {
+    background: url('./img/Qui\ sommes-nous/Qui sommes nous.jpg') no-repeat center center/cover;
+    
+ 
+  }
+  
+  .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  
+  a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide_btn.active, .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+    
+  }
+  
+  .directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    /* max-width: 1100px; */
+    position: relative;
+    top: -600px;
+  }
+  
+  .previous_btn {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+    ;
+  }
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+/*  */
+
+/* .showcase{
     background: #333;
     color: #fff;
     position: relative;
@@ -92,18 +210,19 @@ body{
     to{
         transform: translate(0,40px);
     }
-}
+} */
  
 
  .stats{
-     background: #e3e3e3;
+     background: #fff;
      height: 25vh;
      width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      text-align: center;
-     font-family: 'Roboto Condensed', sans-serif;
+     font-family: 'Lato', sans-serif;
+     margin-top: -17rem;
  }
 
  .item{
@@ -116,24 +235,36 @@ body{
  }
 
  .item i{
-     color: #333;
+     color: #5C95CB;
      font-size: 4rem;
      margin-bottom: 0.7rem;
  }
  .item h4{
-     color: #c4302b;
+     color: #428CC6;
      font-size: 1.2rem;
      padding: 0 2rem;
  }
 
- .line{
-     width: 190px;
-     height: 9px;
-     background: #347AB7;
-     border-radius: 2px;
-     margin-left: 0.7rem;
-     margin-bottom: 2rem;
+ .title{
+     margin-left: 1.7rem;
+     font-family: 'Lato',sans-serif;
 
+ }
+
+ .line{
+     width: 60px;
+     height: 6px;
+     background: #347AB7;
+     /* border-radius: 2px; */
+     margin-left: 1.9rem;
+     margin-bottom: 2rem;
+ }
+ .quality{
+     display: flex;
+     flex-direction: column;
+     margin : 0 1rem 0.7rem 1rem;
+     grid-gap: 0.7rem;
+     padding: 0 2rem;
  }
 
  .time-ul{
@@ -205,6 +336,15 @@ body{
     }
     
 }
+
+@media only screen and (max-width: 767px) {
+    .previous_btn {
+      left: 0;
+    }
+    .next_btn {
+      right: 0;
+    }
+  }
 
 @media(max-width:600px)
 {
