@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet"  href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width:900px)"  href="navbar.css">
     <link rel="stylesheet" href="styleEnergie.css">
+    <link rel="stylesheet" href="maint.css">
   
     <title>Tourelec | Domaine d'activités</title>
 </head>
@@ -15,7 +17,7 @@
     <header id="main-header">
         <!-- first -->
         <nav id="navbar">
-            <a href="#" class="logo-company">
+            <a href="index.html" class="logo-company">
                 <img src="./img/logo.png" alt="">
             </a>
             <ul>
@@ -295,7 +297,75 @@
     </div>
     <h2>Maintenance</h2>
     <div class="line"></div>
-    <div class="Side-menu">
+
+                    <!-- Carousal -->
+<div class="carousel">
+    <div class="carousel__nav">
+     <span id="moveLeft" class="carousel__arrow">
+          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg>
+      </span>
+      <span id="moveRight" class="carousel__arrow" >
+        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg>    
+      </span>
+    </div>
+    <div class="carousel-item carousel-item--1">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Maintenance Electrique</h1>
+        <p class="carousel-item__description"> L'expérience, le professionnalisme et le savoir-faire
+            font de nos ingénieurs et techniciens des équipes qualifiées
+            pour la vérification de tous composants électriques , ainsi que les entretiens
+            périodiques des armoires électriques et postes de transformation,
+            comme le nettoyage sous tension et resserrage de bornes , mais aussi la 
+            vérification des échauffements par caméra thermique.</p>
+        <p class="carousel-item__description"> Nous sommes aussi en mesure de créer de nombreux dispositifs destinés á la 
+            maintenance et le suivi de l'état des composants mécaniques et électriques
+            de l'installation tels que la remontée des informations d'analyse vibratoire
+            mobile sur des moteurs , le graissage automatique par impulsion.</p>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--2">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Maintenance Climatique</h1>
+        <p class="carousel-item__description"> Grace á notre bureau d'études, nos ingénieurs, et nos techniciens,
+            nous vous accompagnons pour l'entretien préventif et curatif de votre climatisation:
+        climatisation réversible , armoire de climatisation , VRN, mono-split ou 
+        multi-split.</p>
+        <p class="carousel-item__description"> Notre équipe dédiée et formée régulierement par les constructeurs aux procédures d'entretien,
+            diagnostic panne et remise en état</p>
+       
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--3">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Maintenance des installations solaires</h1>
+        <p class="carousel-item__description"> Nos techniciens combinent controles préventifs des composants de la centrale
+            photovoltaíque qui sont effectués á intervalles réguliers , et les interventions
+            curatives qui sont faites sur site , dans les délais d'astreinte impartis par 
+            le contat de maintenance photovoltaíque.</p>
+        
+          </div>
+      </div>
+    </div>
+    
+        </div>   
+
+  </div>
+    <!-- <div class="Side-menu">
         <div class="left-side-menu">
             <div class="box-review">
                 <h4>Maintenance Electrique</h4>
@@ -366,7 +436,7 @@
            
 
         </div>
-    </div>
+    </div> -->
 
 </div>
 <!--  -->
@@ -386,6 +456,7 @@
     </div>
 
 </footer>
+<script src="carousal.js"></script>
 <script src="slider.js"></script>
       <script src="script.js"></script>
     </body>

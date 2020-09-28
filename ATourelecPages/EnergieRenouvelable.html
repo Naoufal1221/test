@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet"  href="widescreen.css">
@@ -15,7 +16,7 @@
     <header id="main-header">
         <!-- first -->
         <nav id="navbar">
-            <a href="#" class="logo-company">
+            <a href="index.html" class="logo-company">
                 <img src="./img/logo.png" alt="">
             </a>
             <ul>
@@ -295,7 +296,70 @@
     </div>
     <h2>Energie Renouvelable </h2>
     <div class="line"></div>
-    <div class="Side-menu">
+                <!-- Carousal -->
+<div class="carousel">
+    <div class="carousel__nav">
+     <span id="moveLeft" class="carousel__arrow">
+          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg>
+      </span>
+      <span id="moveRight" class="carousel__arrow" >
+        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg>    
+      </span>
+    </div>
+    <div class="carousel-item carousel-item--1">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Energie Renouvelable</h1>
+        <p class="carousel-item__description"> TOURELEC  a mené plusieurs programmes de recherche
+            sur la prévision de production et le stockage d'énergie,
+            de savoir-faire l'indispensable pour continuer á développer
+            l'énergie éolienne et solaire dans les zones non interconnectées
+            et s'affranchir de la limite de 30% (réglementairement,la puissance des 
+            sources intermittentes ne doit pas dépasser 30% de la consommation).</p>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--2">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Autoconsommation</h1>
+        <p class="carousel-item__description"> TOURELEC Réalise des installations solaires en Autoconsommation
+            qui permettent d'optimiser la part autoconsommée d'économiser l'énergie
+            et de valoriser la flexibilité.</p>
+       
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--3">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Cogénération Biomasse</h1>
+        <p class="carousel-item__description">
+            En Afrique , et au Maroc , toute l'équipe de TOURELEC
+                    étudie des projets qui permettent de valoriser des ressources
+                    locales de biomasse encore peu utilisées:
+        </p>
+        <p class="carousel-item__description"> résidus agricoles, canne fibre , déchets bois .</p>
+        <p class="carousel-item__description"> TOURELEC a piloté un programme de recherche qui a permis de valider la faisablitié
+            de la production d'électricité á partir de déchets de palmier.</p>
+          </div>
+      </div>
+    </div>
+    
+        </div>   
+
+  </div>
+    <!-- <div class="Side-menu">
         <div class="left-side-menu">
             <div class="box-review">
                 <h4>Energie Renouvelable</h4>
@@ -359,7 +423,7 @@
             <br>
        
         </div>
-    </div>
+    </div> -->
 
 </div>
 <!--  -->
@@ -379,6 +443,7 @@
     </div>
 
 </footer>
+<script src="carousal.js"></script>
 <script src="slider.js"></script>
       <script src="script.js"></script>
     </body>

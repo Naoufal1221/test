@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet"  href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width:900px)"  href="navbar.css">
     <link rel="stylesheet" href="styleCourant.css">
+    <link rel="stylesheet" href="elec.css">
   
     <title>Tourelec | Domaine d'activités</title>
-</head>
+</head> 
 <body>
     <header id="main-header">
         <!-- first -->
         <nav id="navbar">
-            <a href="#" class="logo-company">
+            <a href="index.html" class="logo-company">
                 <img src="./img/logo.png" alt="">
             </a>
             <ul>
@@ -295,7 +297,57 @@
     </div>
     <h2>Tableau Electrique </h2>
     <div class="line"></div>
-    <div class="Side-menu">
+                    <!-- Carousal -->
+<div class="carousel">
+    <div class="carousel__nav">
+     <span id="moveLeft" class="carousel__arrow">
+          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg>
+      </span>
+      <span id="moveRight" class="carousel__arrow" >
+        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg>    
+      </span>
+    </div>
+    <div class="carousel-item carousel-item--1">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Transport d'énergie</h1>
+        <p class="carousel-item__description">Etude</p>
+        <p class="carousel-item__description">Conception </p>
+        <p class="carousel-item__description">Cablage</p>
+        <p class="carousel-item__description">Tableaux Debrochables</p>
+        <p class="carousel-item__description">Toutes Marques d'equipements (EATON,schneider, ABB , 
+            LEGRAND, etc....)</p>
+       
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item carousel-item--2">
+      <div class="carousel-item__image"></div>
+      <div class="carousel-item__info">
+        <div class="carousel-item__container">
+        <h2 class="carousel-item__subtitle">Activités </h2>
+        <h1 class="carousel-item__title">Transport d'énergie</h1>
+        <p class="carousel-item__description"> Tourelec peut intervenir dés les premiéres études de votre projet.</p>
+        <p class="carousel-item__description"> Notre expérience et nos compétences techniques
+            sont reconnues et valorisées dans les milieux
+            industriels.</p>
+        <p class="carousel-item__description"> Nous Examinons les besoins techniques relatifs
+            á votre projet et apportons les solutions
+            les plus pertinentes et les mieux adaptées.</p>
+        <p class="carousel-item__description"> Nous anticipons systématiquement et de maniére toujours proactive
+            l'ensemble des contraintes techniques et matérielles d'un projet.</p>
+            
+          </div>
+      </div>
+    </div>
+        </div>  
+    <!-- <div class="Side-menu">
         <div class="left-side-menu">
             <div>
                 <i class="fas fa-check-circle"></i>
@@ -345,9 +397,9 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
           
         </div>
-    </div>
+    </div> -->
 
-    <div class="speech">
+    <!-- <div class="speech">
         <i class="fas fa-quote-left fa-3x"></i>
             <p>Tourelec peut intervenir dés les premiéres études
                 de votre projet.</p> 
@@ -361,7 +413,7 @@
                             l'ensemble des contraintes techniques et matérielles d'un projet.
                         </p>
              <i class="fas fa-quote-right fa-3x"></i>
-    </div>
+    </div> -->
 
 
 </div>
@@ -382,6 +434,7 @@
     </div>
 
 </footer>
+<script src="carousal.js"></script>
 <script src="slider.js"></script>
       <script src="script.js"></script>
     </body>

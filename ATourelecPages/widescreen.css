@@ -43,6 +43,7 @@ ul{
      display: flex;
      align-items: center;
      justify-content: space-between;
+     z-index: 333;
      /* background: coral; */
  }
  
@@ -63,13 +64,15 @@ ul{
      padding: 1rem 1rem 2rem 1rem;
      display: inline-block; /* We could use also inline-flex ... */
      font-weight: bold;
-     color: #347AB7;
+     color: #333;
      font-family: 'Roboto Condensed', sans-serif;
      transition: transform 0.4s ease;
      transform: translate(0,0);
+     cursor: pointer;
  }
  #navbar .first-li:hover{
      transform: translate(0,2px);
+     color: #347AB7;
  }
  .inner ul li{
      display: flex !important;
@@ -83,8 +86,11 @@ ul{
  }
  
  #navbar .link a{
-     color: #347AB7;
+     color: #333;
       font-family: 'Roboto Condensed', sans-serif;
+ }
+ #navbar .link a:hover{
+     color: #347AB7;
  }
  
  #navbar ul li ul,
@@ -96,23 +102,19 @@ ul{
  .inner:hover ul{
      display: block !important;
      position: absolute;
-     top: 50px;
+     top: 52px;
      left: auto;
      width: 250px;
      margin-top: 1rem;
      background:#f6f6f6;
-     border-top: 3px #347AB7 solid;
-     /* border-bottom: 3px #333 solid; */
-     /* border-left: 3px #333 solid;
-     border-right: 3px #333 solid; */
-     animation: anim 0.7s forwards ease-in-out;
-     
+     border-top: 3px #5C95CB solid;
+     animation: anim 0.4s forwards ease-in-out;     
  }
  .inner:hover ul{
      top: -5px;
      left: 250px;
      border-top: none;
-     border-bottom: 3px #347AB7 solid;
+     border-bottom: 3px #5C95CB solid;
  }
  
  .inner i{

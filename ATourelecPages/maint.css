@@ -1,0 +1,12 @@
+.carousel-item--1 .carousel-item__image{
+    background-image: url('./img/domaines/maintenance2.PNG?auto=compress&cs=tinysrgb&dpr=8&h=650&w=940');
+  }
+  
+  
+  .carousel-item--2 .carousel-item__image{
+      background-image: url('./img/domaines/maintenance3.PNG?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  }
+  
+  .carousel-item--3 .carousel-item__image{
+      background-image: url('./img/domaines/maintenance4.PNG?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  }

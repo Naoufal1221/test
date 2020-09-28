@@ -1,0 +1,14 @@
+.carousel-item--1 .carousel-item__image{
+    background-image: url('./img/domaines/Clim.PNG?auto=compress&cs=tinysrgb&dpr=8&h=650&w=940');
+  }
+  
+  
+  .carousel-item--2 .carousel-item__image{
+      background-image: url('./img/domaines/Clim2.PNG?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  }
+  .carousel-item--3 .carousel-item__image{
+      background-image: url('./img/domaines/Clim3.PNG?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  }
+  .carousel-item--4 .carousel-item__image{
+      background-image: url('./img/domaines/Clim4.PNG?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  }
