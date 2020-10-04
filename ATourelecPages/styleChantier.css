@@ -111,6 +111,7 @@ body{
 }
 
 .chantiers .elemnt h4{
+    font-family: 'Lato',sans-serif;
     text-align: start;
     padding: 2rem 0.5rem;
 }

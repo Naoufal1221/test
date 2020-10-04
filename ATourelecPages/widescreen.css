@@ -14,12 +14,12 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index:2 ;
     border: none;
     /* overflow: hidden; */
     width: 100%;
     background: #edf1f7;
      height: 7vh;
+     z-index: 999;
      
      
  }
@@ -44,7 +44,7 @@ ul{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     z-index: 333;
+     z-index: 999;
      /* background: coral; */
  }
  
@@ -56,10 +56,13 @@ ul{
  #navbar ul{
      list-style: none;
      
+     
  }
  #navbar ul li{
      color: #555;
      height: 100%;
+     
+     
  }
  #navbar .first-li{
      padding: 1rem 1rem 2rem 1rem;
@@ -72,6 +75,8 @@ ul{
      transition: transform 0.4s ease;
      transform: translate(0,0);
      cursor: pointer;
+     
+     
  }
  #navbar .first-li:hover{
      transform: translate(0,2px);
@@ -80,10 +85,12 @@ ul{
  .inner ul li{
      display: flex !important;
      flex-direction: column;
+     background-color: #f6f6f6;
  }
  
  #navbar ul li a{
      text-decoration: none;
+     width: 100%;
      /* font-weight: bold; */
      /* font-family: 'Roboto Condensed', sans-serif; */
  }
@@ -112,6 +119,7 @@ ul{
      background:#f6f6f6;
      border-top: 3px #5C95CB solid;
      animation: anim 0.4s forwards ease-in-out;     
+     
  }
  .inner:hover ul{
      top: -5px;
@@ -127,20 +135,26 @@ ul{
  .first-li i{
      margin-left: 0.4rem;
  }
+
  
  .first-list li{
+     width: 100%;
      padding: 0.5rem 0.5rem;
      border-bottom: #e8e8e8 solid 1px;
      transform: translate(0,0);
      transition: all 0.3s ease-in-out;
+     background: #f6f6f6;
  }
  .first-list li a{
+     display: flex;
+     /* padding-right: 2rem; */
      color: #555;
      font-weight: normal;
      font-size: 13px;
      font-family: 'Open Sans', sans-serif;
      
  }
+
  
  .first-list li:hover{
      background: #e8e8e8;
