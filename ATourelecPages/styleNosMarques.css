@@ -224,6 +224,12 @@ h1,h2,h3,h4{
     border-radius: 1px;
 }
 
+.marks{
+    width: 90%;
+    height: 70%;
+    margin-left: 3rem;
+}   
+
 .marques{
     width: 100%;
     height: 100%;

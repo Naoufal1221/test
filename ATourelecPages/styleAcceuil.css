@@ -17,7 +17,7 @@ body{
     z-index: 999;
 }
 
-.container-header .right-side{z-index: 2 !important;}
+/* .container-header .right-side{z-index: 2 !important;}
 
 .link-item i,
 .right-side h4,
@@ -29,7 +29,7 @@ body{
 #main-footer a:hover{
     transition: all 0.3s ease-in-out;
     color: #333 !important;
-}
+} */
 
 .container{
     width: 95%;

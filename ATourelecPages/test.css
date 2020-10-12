@@ -1,0 +1,324 @@
+.showcase{
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+   
+}
+.showcase::before{
+    content: '';
+    background: url('./img/Qui sommes-nous/CV7B6084.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    opacity: 0.4;
+}
+
+.showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.nameCompany{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-size: 28px;
+    grid-gap: 2rem;
+    margin-top: 10rem;
+}
+
+.nameCompany h1{
+    padding: 0 20px;
+    width: calc(100%-80px);
+    height: calc(100%-80px);
+    /* border: #fff 3px solid; */
+    border-radius: 50%;
+}
+
+.col-red{
+    background: #e74a3b;
+    border: #e74a3b 3px solid;
+
+}
+
+.col-blue{
+    background: #317ec7;
+    border: #317ec7 3px solid;
+}
+
+.nameCompany +h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+ .scene{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    margin-top: 4rem;
+    width: 50%;
+}
+
+.container-stats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.container-stats h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+    border-bottom: 2px solid #999;
+    border-top: 2px solid #999;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.stats{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.text-stats p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    margin-bottom: 0.7rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+}
+
+.stat p{
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.val-stat{
+    display: flex;
+    width: 400px;
+    height: 24px;
+    background: #e3e3e3;
+}
+
+
+.val-stat .first{
+    background: cornflowerblue;
+}
+
+.stat:nth-child(3) .val-stat .first{
+    width: 50%;
+}
+.stat:nth-child(1) .val-stat .first{
+    width: 90%;
+}
+.stat:nth-child(2) .val-stat .first{
+    width: 60%;
+}
+.stat:nth-child(4) .val-stat .first{
+    width: 100%;
+}
+.stat:nth-child(5) .val-stat .first{
+    width: 30%;
+}
+
+.president{
+    background: url(./img/PDG.jpg) no-repeat center center/cover;
+    width: 400px;
+    height:400px;
+    border-radius: 50%;
+}
+
+.global-box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    margin: 1rem  1rem 5rem 1rem;
+    width: 100%;
+}
+
+.global-box .global-left-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    border-top: #e8e8e8 2px solid;
+    padding: 1rem 0;
+}
+
+.global-box .global-right-box{
+    border-top: #e8e8e8 2px solid;
+    padding: 1rem 0;
+}
+
+.global-box .global-left-box h4{
+    grid-column: 1 / span 2;
+    font-family: 'Lato',sans-serif;
+}
+.global-box .global-right-box{
+    font-family: 'Lato',sans-serif;
+}
+
+.global-box .global-left-box .left-box,
+.global-box .global-right-box .right-box{
+    width: 100%;
+    height: 100%;
+    border: #347AB7 3px solid;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.global-box .global-left-box .left-box h5,
+.global-box .global-right-box .right-box h5{
+    margin-bottom: 3rem;
+    font-family: 'Lato',sans-serif;
+}
+.global-box .global-left-box .left-box h4,
+.global-box .global-right-box .right-box h4{
+    margin-bottom: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+.global-box .global-left-box .left-box p,
+.global-box .global-right-box .right-box p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+
+}
+.global-box .global-left-box .left-box div,
+.global-box .global-right-box .right-box div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    
+}
+
+.global-box .global-left-box .left-box div a,
+.global-box .global-right-box .right-box div a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+    font-family: 'Lato',sans-serif;
+}
+
+.global-box .global-left-box .left-box div a:hover,
+.global-box .global-right-box .right-box div a:hover{
+    color: #347AB7;
+    text-decoration: underline;
+}
+
+.global-box .global-left-box .left-box:last-child{
+    background: #347AB7;    
+    color: #f6f6f6;
+}
+.global-box .global-left-box .left-box:last-child div a{
+    color: #f6f6f6;
+}
+.global-box .global-right-box .right-box{
+    background: #333;
+    color: #f6f6f6;
+    border: 3px #333 solid;
+}
+
+.global-box .global-right-box .right-box div a{
+    color: #f6f6f6;
+}
+
+
+.global-box .global-right-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.global-box .global-right-box h4{
+    margin-bottom: 1rem;
+}
+
+.second-showcase{
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    margin-top: 4rem;
+   
+}
+.second-showcase::before{
+    content: '';
+    background: url('./img/parallax.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    opacity: 0.4;
+}
+
+.second-showcase .second-showcase-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding: 0 10rem;
+    position: relative;
+    z-index: 1;
+}
+
+.item-icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 3rem;
+}
+.item-icons i{
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    padding-top: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #fff;
+}
+
+.item-icons p{
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+

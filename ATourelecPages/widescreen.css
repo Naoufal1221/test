@@ -67,11 +67,11 @@ ul{
  #navbar .first-li{
      padding: 1rem 1rem 2rem 1rem;
      display: inline-block; /* We could use also inline-flex ... */
-     font-weight: bold;
      color: #333;
      /* font-family: 'Roboto Condensed', sans-serif; */
-     font-family: 'Open Sans', sans-serif;
-     font-size: 14px;
+     font-family: 'Roboto Condensed', sans-serif !important;
+     font-size: 18px;
+     font-weight: 600;
      transition: transform 0.4s ease;
      transform: translate(0,0);
      cursor: pointer;
@@ -97,7 +97,10 @@ ul{
  
  #navbar .link a{
      color: #333;
-     font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+
      }
  #navbar .link a:hover{
      color: #347AB7;
@@ -206,6 +209,10 @@ ul{
     #navbar{
         justify-content: center;
     }
+    #navbar .first-li,
+    #navbar .link a{
+        font-size: 14px;
+    }
 }
 
  @media(max-width:900px){
@@ -218,15 +225,4 @@ ul{
     }
  }
  
- /* @media(max-width:900px)
- {
-     header{
-         height: 100%;
-     }
-     #navbar .first-li{
-         display: flex;
-         flex-direction: column;
-     }
-     
- } */
  
