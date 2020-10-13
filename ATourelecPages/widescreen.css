@@ -10,6 +10,7 @@
 }
 body{
     line-height: 1.7;
+    /* background: #edf1f7; */
 }
 header{
     position: sticky;
@@ -18,7 +19,7 @@ header{
     /* overflow: hidden; */
     width: 100%;
     background: #edf1f7;
-     height: 7vh;
+     height: 10vh;
      z-index: 999;
      
      
@@ -40,7 +41,7 @@ ul{
      height: 100%;
      margin-left:  auto;
      margin-right:  auto;
-     margin-top: 0.5rem;
+     /* margin-top: 0.5rem; */
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -115,7 +116,7 @@ ul{
  .inner:hover ul{
      display: block !important;
      position: absolute;
-     top: 52px;
+     top: 63px;
      left: auto;
      width: 250px;
      margin-top: 1rem;
