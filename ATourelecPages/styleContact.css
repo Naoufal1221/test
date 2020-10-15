@@ -51,14 +51,14 @@ span{
     align-items: center;
     justify-content: center;
 }
-.showcase .showcase-container h1{
+/* .showcase .showcase-container h1{
     animation: anim 1s forwards ease;
 }
 
 @keyframes anim{
     from{transform: translate(0,-10px);}
     to{transform: translate(0,0);}
-}
+} */
 .Sides{
     display: grid;
     grid-template-columns: repeat(2,2fr);

@@ -91,7 +91,7 @@ html, body {
     
  }
 
- .showcase .showcase-container .showcase-content h4{
+ /* .showcase .showcase-container .showcase-content h4{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 2rem;
@@ -104,12 +104,12 @@ html, body {
      to{
          transform: translate(0,0);
      }
- }
+ } */
 
- .showcase .showcase-container .showcase-content h1:hover{
+ /* .showcase .showcase-container .showcase-content h1:hover{
     color: #c4302b;
     font-size: 2rem;
- }
+ } */
 
 
  .showcase + h2{

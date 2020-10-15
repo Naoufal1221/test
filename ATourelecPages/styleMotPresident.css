@@ -90,7 +90,7 @@ h1,h2,h3,h4{
      justify-content: center;
  }
 
- .showcase .showcase-container .showcase-content h4{
+ /* .showcase .showcase-container .showcase-content h4{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -103,7 +103,9 @@ h1,h2,h3,h4{
      to{
          transform: translate(0,0);
      }
- }
+ } */
+
+
  .showcase +i{
      color: #5C95CB;
      margin-left: 2rem;

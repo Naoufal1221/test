@@ -80,7 +80,7 @@ body{
     z-index: 1;
 }
 
-.showcase .showcase-content h1{
+/* .showcase .showcase-content h1{
     margin: auto 0;
     animation: cand 1s forwards ease-in-out;
 }
@@ -91,7 +91,7 @@ body{
     to{
         transform: translate(0,80px);
     }
-}
+} */
 .title-map{
     text-align: center;
     margin-top: 0.7rem;

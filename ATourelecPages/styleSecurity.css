@@ -89,9 +89,8 @@ body{
     
  }
 
- .showcase .showcase-container .showcase-content h1{
+ /* .showcase .showcase-container .showcase-content h1{
     font-family: 'Lato', sans-serif;
-    /* font-weight: bold; */
     font-size: 4rem;
     animation: topic 1s forwards ease;
  }
@@ -102,7 +101,7 @@ body{
      to{
          transform: translate(0,0);
      }
- }
+ } */
 
  .container-content{
    width: 70%;
