@@ -26,7 +26,7 @@ h1,h2,h3,h4{
     padding: 0;
     margin:0;
 }
-.container{
+.container-inner{
     width: 95%;
     height: 100%;
     background: #317ec7;
@@ -100,14 +100,7 @@ h1,h2,h3,h4{
 
 
 
-@keyframes slider{
-    from{
-        transform: translate(0,-400px);
-    }
-    to{
-        transform: translate(0,0);
-    }
-}
+
 .icon-down{
     width: 100%;
     background: #fff;
@@ -119,6 +112,7 @@ h1,h2,h3,h4{
     width: 100%;
     color: #5C95CB;
     transition: all 0.4s ease;
+    margin-top: 8rem;
 }
 .icon-down i:hover{
     transform: scale(1.1);
@@ -133,6 +127,84 @@ h1,h2,h3,h4{
     text-align: center;
     font-size: 3rem;
 }
+
+/*animation */
+
+.container{
+    display: none;
+    background: #fff;
+}
+h2 {
+	text-align: right;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: #eee;
+	background-color: #111;
+	padding: 4px;
+}
+svg {
+    opacity: 0;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 90vh;
+    /*   */
+    
+}
+.side-block rect {
+	stroke: #cbcbca;
+	stroke-width: 0.4;
+	fill: #f6f6f5;
+}
+.block-text {
+    font-family: 'Roboto', sans-serif !important;
+	font-size: 8px;
+}
+.block-text .header {
+	font-size: 12px;
+	font-weight: bold;
+}
+.block-text .last-line {
+	font-weight: bold;
+}
+.side-block-left .last-line {
+	fill: #0099F7;
+}
+.side-block-right .last-line {
+	fill: #F11712;
+}
+.corner-text-back {
+	fill: #fff;
+	opacity: 0;
+	filter: url(#blur-filter);
+}
+.corner-text {
+	font-size: 10px;
+	opacity: 0;
+}
+.line-gray {
+	stroke: #CDCDCC;
+	stroke-width: 10;
+	fill: none;
+}
+.line-animated {
+	stroke: url(#line-gradient);
+	stroke-width: 10;
+	fill: none;
+	stroke-linecap: round;
+	stroke-dasharray: 1100;
+	stroke-dashoffset: 3300;
+}
+
+
+/*Gradient colors*/
+.left-color {
+	stop-color: #0099F7;
+}
+.right-color {
+	stop-color: #F11712;
+}
+/**/
 
 .speech{
     background: #f4f4f4;
@@ -353,6 +425,16 @@ h1,h2,h3,h4{
 } */
 
 /*Make it Completely Responsive*/
+
+@media(max-width:1024px){
+    .container{
+        display: block;
+    }
+
+    .speech{
+        display: none;
+    }
+}
 
 @media(max-width:768px){
 

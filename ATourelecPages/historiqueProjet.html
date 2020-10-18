@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/564fb5f1ab.js" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet"  href="widescreen.css">
     <link rel="stylesheet" media="screen and (max-width:900px)"  href="navbar.css">
@@ -263,30 +264,77 @@
         </div>
     </header>
     <!--  -->
-    <div class="container">
+    <div class="container-inner">
         <div class="showcase">
             <div class="showcase-container">
-                <h4>Historique des projets </h4>
                 <div class="showcase-content">
-                    <!-- <h1>Historique des projets</h1> -->
-                    <!-- <div class="mission">
-                        <h1>NOTRE MISSION</h1>
-                    <span>Etablir des relations à long terme avec nos clients et fournir une qualité
-                         exceptionnelle et des services à la clientèle en poursuivant les activités grâce
-                          à l'innovation, la créativité et la technologie de pointe.</span>
-                    </div>
-                    <div class="objectif">
-                        <h1>NOTRE OBJECTIF</h1>
-                    <span>Etablir des relations à long terme avec nos clients et fournir une qualité
-                         exceptionnelle et des services à la clientèle en poursuivant les activités grâce
-                          à l'innovation, la créativité et la technologie de pointe.</span>
-                    </div> -->
-                    
+                    <h1 class="reveal-text">Historique des projets </h1>
                 </div>
             </div>
         </div>
-            <div class="speech">
-                <div class="missions">
+
+        <div class="container">
+            <svg viewbox="0 -120 406 430">
+                <defs>
+                    <linearGradient id='line-gradient' x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop class='left-color' offset='0%'/>
+                        <stop class='right-color' offset='100%'/>
+                    </linearGradient>
+                    <filter id="blur-filter">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+                    </filter>
+                </defs>
+        
+                <!-- 8-shaped line -->
+                <g class="line">
+                    <path class="line-gray" d="M27 98.8c-0.5,-45 30.5,-77.9 76.4,-77.8 95.2,0.3 102,158 200,153 45,-2.4 70,-31.5 70,-77.6 0.4,-39 -26.6,-75 -69,-76 -98.3,-1.7 -104,156 -201,155 -50,-0.6 -74.4,-33 -76,-73.6"/>
+                    <path class="line-animated" d="M27 98.8c-0.5,-45 30.5,-77.9 76.4,-77.8 95.2,0.3 102,158 200,153 45,-2.4 70,-31.5 70,-77.6 0.4,-39 -26.6,-75 -69,-76 -98.3,-1.7 -104,156 -201,155 -50,-0.6 -74.4,-33 -76,-73.6"/>
+                </g>
+        
+                <!-- Big rectangle blocks-->
+                <g class="side-block side-block-left">
+                    <rect x="10" y="62" width="140" height="74" rx="1" ry="1"/>
+                    <g class="block-text">
+                        <text x="19" y="79" text-anchor="start" class="header">NOTRE MISSION</text>
+                        <text x="19" y="95" text-anchor="start" >Etablir des relations à long </text>
+                        <text x="19" y="104" text-anchor="start" >terme avec nos clients</text>
+                        <text x="19" y="125" text-anchor="start" class="last-line">Awesome stuff</text>
+                    </g>
+                </g>
+                <g class="side-block side-block-right">
+                    <rect x="210" y="62" width="185" height="74" rx="1" ry="1"/>
+                    <g class="block-text">
+                        <text x="219" y="79" text-anchor="start" class="header">NOTRE OBJECTIF</text>
+                        <text x="219" y="95" text-anchor="start" >Être un leader dans l'industrie de l'installation  </text>
+                        <text x="219" y="104" text-anchor="start" > électrique en offrant des services de haute qualité</text>
+                        <text x="219" y="125" text-anchor="start" class="last-line">Simple and powerful</text>
+                    </g>
+                </g>
+        
+                <!-- Corner text -->
+                <g class="corner-text-back-wrapper">
+                    <rect class="corner-text-back" x="200" y="16" width="200" height="20" />
+                    <rect class="corner-text-back" x="0" y="161" width="200" height="20" />
+                    <rect class="corner-text-back" x="200" y="161" width="200" height="20" />
+                    <rect class="corner-text-back" x="0" y="16" width="200" height="20" />
+                </g>
+                <text x="40" y="4" class="corner-text" text-anchor="start">
+                    Some text to show
+                </text>
+                <text x="370" y="200" class="corner-text" text-anchor="end">
+                    Another text
+                </text>
+                <text x="370" y="4" class="corner-text" text-anchor="end">
+                    We need more text!
+                </text>
+                <text x="40" y="200" class="corner-text" text-anchor="start">
+                    One more block
+                </text>
+            </svg>
+        </div>
+        
+        <div class="speech">
+             <div class="missions">
                     <h1>NOTRE MISSION</h1>
                     <span>Etablir des relations à long terme avec nos clients et fournir une qualité
                          exceptionnelle et des services à la clientèle en poursuivant les activités grâce
@@ -296,8 +344,9 @@
                     <h1>NOTRE OBJECTIF</h1>
                     <span>Être un leader dans l'industrie de l'installation électrique en offrant des services de haute qualité,
                          des relations et une rentabilité améliorés..</span>
-                </div>
+                </div> 
             </div>
+           
             <div class="icon-down">
                 <i class="fas fa-hand-point-down"></i>  
             </div>
@@ -489,5 +538,6 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="animation.js"></script>
 </body>
 </html>

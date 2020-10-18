@@ -295,6 +295,10 @@ html, body {
     /* padding: 0.7rem 0.5rem; */
 }
 
+.lineh{
+    line-height: 10px !important;
+}
+
 
 .carousel-item--1 .carousel-item__image{
   background-image: url('./img/courant/Page4Photo1.jpg?auto=compress&cs=tinysrgb&dpr=8&h=650&w=940');

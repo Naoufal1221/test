@@ -51,23 +51,43 @@ h1,h2,h3,h4{
     transform: translate(0,-5px);
 }
 
+.president-ground{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2rem;
+}
+
+.col-black{
+    color: #333;
+    text-align: center;
+}
+
+.reveal-text{
+    color: #444;
+}
+.reveal-text:after{
+    content: '';
+    background: #347AB7;
+    text-align: center;
+}
+
 .showcase{
     background: #333;
     color: #fff;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 600px;
    
 }
 .showcase::before{
     content: '';
-    background: url(./img/Mot\ du\ president.PNG) no-repeat center center/cover;
+    background: url(./img/Mot\ du\ president.PNG) no-repeat center/cover  ;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    opacity: 0.7;
+    height: 600px;
+    opacity: 0.8;
     
 }
 
@@ -106,7 +126,7 @@ h1,h2,h3,h4{
  } */
 
 
- .showcase +i{
+ .president-ground i{
      color: #5C95CB;
      margin-left: 2rem;
      margin-top: 2rem;
@@ -169,67 +189,132 @@ h1,h2,h3,h4{
      color: #333;
  }
 
- .boxes{
+ .inner-showcase{
+    background: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+   
+}
+.inner-showcase::before{
+    content: '';
+    background: url('./img/Qui sommes-nous/CV7B6084.jpg') no-repeat center/cover  ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    opacity: 0.3;
+    
+}
+
+ .inner-showcase .inner-showcase-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+ }
+
+ .inner-showcase .inner-showcase-container .inner-showcase-content{
      width: 100%;
-     margin-top: 2rem;
-     padding: 0.7rem 1rem;
+     height: 100%;
+     display: flex;
+ }
+
+ .title-pres{
+     width: 70%;
+    font-family: 'Roboto Condensed', sans-serif ;
+    font-size: 24px;
+    border-bottom: 2px solid #999;
+    border-top: 2px solid #999;
+    text-align: center;
+    padding: 1rem 0;
+    color: #333;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+
+
+ .boxes{
+     width: 80%;
+     margin: 2rem auto ;
+     padding: 2rem 2rem;
      display: grid;
-     grid-template-columns: repeat(2,1fr);
+     grid-template-columns: repeat(3,1fr);
      grid-gap: 1rem;
-     margin-left: 6rem;
      align-items: center;
+     justify-content: center;
      /* text-align: center; */
+    
  }
-
- .boxes span::before{
-     content: '+';
-     font-family: 'Lato',sans-serif;
-     font-weight: bold;
-     color: #f4f4f4;
-     margin-right: 0.5rem;
-     background: #347AB7;
-     border-radius: 50%;
-     padding: 0.5rem 0.7rem;
-     transition: all 0.3s ease;
- }
-
- .boxes span:hover::before{
-     background: #c4302b;
-     
- }
+ 
 
 
- .boxes span{
-     margin-bottom: 1rem;
-     transition: all 0.3s ease;
- }
-
- .boxes span:hover{
-    transform: translate(-5px,0);
- }
 
  .boxes .box{
-     background: #fff;
-     padding: 1rem 1.3rem;
-     border-top-left-radius: 7px;
-     border-bottom-left-radius: 7px;
-     border-top-right-radius: 5px;
-     border-bottom-right-radius: 5px;
-     border-left: #c4302b 7px solid;
-     background: #5C9CD8;
-     color: #fff;
-     font-weight: 400;
-     font-size: 20px;
-     font-family: 'Teko', sans-serif;
+     display: flex;
+     flex-direction: column;
+     background: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    padding: 2rem 0;
+    box-shadow: 0 25px 100px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+ }
+ .box i{
+     text-align: center;
+     font-size: 3rem;
+     color: #edf1f7;
+ }
+
+ .box:nth-child(odd) i{
+     color: #c4302b;
+ }
+ .box:nth-child(even) i{
+     color: #5C95CB;
+ }
+
+ .box span{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 0.6rem;
+ }
+
+ .box:hover{
+    background: rgba(0, 0, 0,0.9);
+    transform: translate(0 ,5px);
+
+    /* color: #444 !important; */
  }
 
 
  /*Responsive*/
 
- @media(max-width:1028px){
+ @media(max-width:1024px){
+
+    .president-ground{
+        grid-template-columns: 1fr;
+        padding: 0;
+        grid-gap: 0.7rem;
+        margin-bottom: 3rem;
+    }
+    
+    .title-pres{
+        width: 90%;
+        font-size: 20px;
+    }
+
     .boxes{
+        width: 100%;
         grid-template-columns: repeat(2,1fr);
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
         
     }
 
@@ -237,16 +322,15 @@ h1,h2,h3,h4{
 
  @media(max-width:768px)
  {
-    .showcase::before{
-        background: url(./img/Mot\ du\ president.PNG) no-repeat center/cover;
-        width: 100%;
+    .title-pres{
+        width: 95%;
+        font-size: 14px;
     }
 
-     .boxes{
-         grid-template-columns: repeat(2,1fr);
-         margin-left: 0.5rem;
-         
-     }
+    .boxes span{
+        font-size: 14px;
+    }
+
  }
 
  @media(max-width:600px){

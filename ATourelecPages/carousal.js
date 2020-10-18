@@ -33,4 +33,17 @@ $(function(){
       console.log('current '+current);
       console.log('prev '+prev);
     }
+    
+    function maBoucle(){
+      setTimeout(function(){
+        var next=current;
+        console.log('next===> '+next);
+        current= current+1;
+        setSlide(next, current);
+        maBoucle(); // relance la fonction
+      }, 5000);
+  }
+  maBoucle();
   });
+
+  
