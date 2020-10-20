@@ -443,7 +443,6 @@ header{
 .images{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* grid-gap: 1rem; */
     width: 60%;
     margin-bottom: 10rem;
 }
@@ -509,5 +508,54 @@ header{
     margin-top: 0.25em;
 }
 
+
+/*responsive part*/
+
+@media(max-width:1024px){
+
+    .showcase,
+    .showcase::before{
+        height: 50vh;
+    }
+    .images{
+        width: 70%;
+        margin: 4rem 12rem 10rem auto;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .motPresident{
+        grid-template-columns: 1fr;
+    }
+    .president{
+        width: 100%;
+    }
+
+    .global-box{
+        padding-right: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    .nameCompany{
+        font-size: 18px;
+        grid-gap: 1rem;
+    }
+
+    .nameCompany h1{
+        padding: 0 15px;
+        color: #fff;
+    }
+
+    .images{
+        width: 80%;
+        margin: 4rem 8rem 10rem auto;
+    }
+
+    .image {
+      
+        width: 350px;
+        height: 218.5px;
+    }
+}
 
 
