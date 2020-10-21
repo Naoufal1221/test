@@ -84,6 +84,7 @@ h1,h2,h3,h4{
     height: 100%;
     position: relative;
     z-index: 1;
+    padding-top: 4rem;
 }
 
 
@@ -221,6 +222,7 @@ svg {
 .objectifs{
     padding: 0 5rem;
     border-right: #317ec7 3px solid;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .objectifs{
     border-right: none;
@@ -230,6 +232,11 @@ svg {
 .objectifs h1{
     text-align: center;
     margin-bottom: 0.7rem;
+}
+
+.missions span,
+.objectifs span{
+    font-size: 18px;
 }
 
 

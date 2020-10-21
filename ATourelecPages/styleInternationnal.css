@@ -55,43 +55,138 @@ body{
     color: #fff;
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
    
 }
 .showcase::before{
     content: '';
-    background: url(./img/pexels-porapak-apichodilok-346885.jpg) no-repeat center center/cover;
+    background: url(./img/PAfrique/p6.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 30vh;
-    opacity: 0.7;
+    height: 50vh;
+    opacity: 0.8;
 }
 
 .showcase .showcase-content{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
     width: 100%;
     height: 100%;
     position: relative;
+    top: 120px;
     z-index: 1;
 }
 
-/* .showcase .showcase-content h1{
-    margin: auto 0;
-    animation: cand 1s forwards ease-in-out;
+/*text Animation*/
+
+.theTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12rem;
+    margin-top: 7rem;
+    height: 130px;
+    transform: translate(-50%, -50%);
+    width: 600px;
 }
-@keyframes cand{
-    from{
-        transform: translate(0,-10px);
-    }
-    to{
-        transform: translate(0,80px);
-    }
-} */
+
+.right, .left{
+    width: 20%;
+    overflow: hidden;
+}
+.left{
+    text-align: center;
+}
+
+.left i{
+    font-size: 54px;
+}
+.right{
+    margin-bottom: 19px;
+    /* margin-left: -4rem; */
+    text-align: start;
+}
+.theTitle h1{
+    margin: 0;
+    height: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    font-family:  'Lato',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #444;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-out .1s;
+}
+
+.theTitle .separator{
+    background-color: #e74a3b;
+    width: 4px;
+    transform: rotate(90deg);
+    height: 0;
+    display: block;
+    margin: 0 6px 0 0;
+    transition: height 0.3s ease 0.9s, transform 0.3s ease 0.6s;
+}
+
+.declencheur .separator{
+    height: 100%;
+    transform: rotate(0);
+    transition: height 0.3s ease, transform 0.3s ease 0.4s;
+
+}
+.theTitle.declencheur h1{
+    transform: translateX(0);
+    transition: transform 0.6s ease-out 0.8s;
+}
+.theTitle.declencheur p{
+    transform: translateX(0);
+    transition: transform 0.5s ease-out 0.7s;
+}
+.theTitle .right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.theTitle p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato',sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #333;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+.toggleClass{
+    background: none;
+    border: none;
+    border: 2px solid #333;
+    font-size: 2rem;
+    font-family: Calibri;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+.toggleClass:hover{
+    background-color: #333;
+    color: #fff;
+}
+.toggleClass:active{
+    background-color: #2a2a2a;
+}
+
 .title-map{
     text-align: center;
     margin-top: 0.7rem;
@@ -140,9 +235,9 @@ body{
       width: 100%;
       padding: 0 3rem;
       margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 4rem;
       font-family: 'Roboto Condensed', sans-serif;
-      grid-gap: 0.2rem;
+      /* grid-gap: 0.2rem; */
   }
 
   .diver{
@@ -151,25 +246,19 @@ body{
       justify-content: center;
       background: #f6f6f6;
   }
-  .diver:nth-child(even){
-      background: #e8e8e8;
-  }
+  
+  /* .diver .text-speech{
+      margin-top: 2rem;
+  } */
 
-  .diver:nth-child(even) .text-speech{
-      padding-left: 5rem;
-  }
 
-  .diver .text-speech{
-      margin-top: 4rem;
-  }
-
-  .diver .text-speech h1{
-      margin-bottom: 0.7rem;
-  }
-
-  .diver .text-speech p{
-    padding-top: 2rem;
-  }
+  .diver .text-speech .content{
+       margin: -4rem 0 0 8rem ;
+       font-family: 'Roboto Condensed', sans-serif;
+       font-size: 22px;
+       width: 80%;
+       padding: 1rem;
+    }
 
 
 
