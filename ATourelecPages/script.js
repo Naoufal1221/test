@@ -172,6 +172,12 @@ fourthSousList.addEventListener('mouseleave',function(){
 //   setTimeout(function(){lastInner.style.opacity=0;},200);
 // });
 
+setTimeout(function(){
+  document.querySelectorAll('.theTitle').forEach(el=>{
+    el.classList.add('declencheur');
+  });
+}, 1000);
+
 document.getElementById('postuler').addEventListener('click',()=>{
   document.querySelector('.notif').style.display='block';
   document.querySelector('.notif-danger').style.display='block';
@@ -184,6 +190,9 @@ document.getElementById('postuler').addEventListener('click',()=>{
   
   
 });
+
+
+
 
 
 
