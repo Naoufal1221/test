@@ -178,18 +178,6 @@ setTimeout(function(){
   });
 }, 1000);
 
-document.getElementById('postuler').addEventListener('click',()=>{
-  document.querySelector('.notif').style.display='block';
-  document.querySelector('.notif-danger').style.display='block';
-
-  setTimeout(()=>{
-    document.querySelector('.notif').style.display='none';
-    document.querySelector('.notif-danger').style.display='none';
-  },2000);
-  
-  
-  
-});
 
 
 
