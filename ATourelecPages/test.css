@@ -445,7 +445,7 @@ header{
 .images{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 60%;
+    width: calc(60%-10px);
     margin-bottom: 10rem;
     margin-left: auto;
     margin-right: auto;
