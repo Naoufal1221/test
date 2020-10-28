@@ -78,11 +78,11 @@ h1,h2,h3,h4{
 }
 
 .showcase{
-    background: #333;
+    background: #555;
     color: #fff;
     position: relative;
-    width: 100%;
-    height: 600px;
+    width: 95%;
+    height: 500px;
    
 }
 .showcase::before{
@@ -92,8 +92,8 @@ h1,h2,h3,h4{
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
-    opacity: 0.8;
+    height: 500px;
+    opacity: 1;
     
 }
 
@@ -121,11 +121,16 @@ h1,h2,h3,h4{
      margin-left: 2rem;
      margin-top: 2rem;
  }
+
+ .text-president i{
+    margin-top: -2rem;
+ }
+
  .speech +i{
      color: #5C95CB;
      float: right;
      margin-right: 2rem ;
-     margin-bottom: 2rem;
+     margin-top: -55px;
      }
 
  .speech{
@@ -189,7 +194,7 @@ h1,h2,h3,h4{
 }
 .inner-showcase::before{
     content: '';
-    background: url('./img/chiffrecles.jpg') no-repeat center/cover  ;
+    background: url('./img/Qui sommes-nous/CV7B6082.jpg') no-repeat center/cover  ;
     position: absolute;
     top: 0;
     left: 0;

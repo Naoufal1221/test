@@ -59,13 +59,13 @@
 }
 .showcase::before{
     content: '';
-    background: url(./img/contactImage.jpeg) no-repeat center center/cover;
+    background: url(./img/plomb1.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 20vh;
-    opacity: 0.7;
+    opacity: 0.4;
     
 }
 
@@ -518,6 +518,14 @@ transform: translateX(0);
 
  @media(max-width:1024px)
  {
+     .showcase,
+     .showcase::before{
+         height: 50vh;
+     }
+
+     .showcase::before{
+         opacity: 0.9;
+     }
     .theTitle{
         margin-left: 10rem;
     }
@@ -526,9 +534,10 @@ transform: translateX(0);
  
 
  @media(max-width:900px){
-    .showcase{
-        display: none;
-    }
+    .showcase,  
+     .showcase::before{
+         height: 30vh;
+     }
     .Side-menu .right-side-menu{
         grid-template-columns: 1fr;
     }
@@ -572,8 +581,9 @@ transform: translateX(0);
     }
 
     .carousel-item__info{
+        /* background-color: coral; */
         width: 50%;
-        padding: 2rem 10px 0 10px;
+        padding: 0 10px 0 10px;
     }
 
     /* .carousel-item{

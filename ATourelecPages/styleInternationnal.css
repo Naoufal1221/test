@@ -50,6 +50,140 @@ body{
     grid-gap: 1rem;
 }
 
+/* Slider image */
+.slider {
+    margin: 0 auto 0 auto;
+    /* max-width: 1100px; */
+    width: 100%;
+    height: 100%;
+    /* height: 800px; */
+  }
+  
+  .slide_viewer {
+    height: 650px;  
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group {
+    height: 650px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: none;
+    height: 650px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide:nth-of-type(1) {
+    background: url('./img/PAfrique/p1.jpg') no-repeat center center/cover;
+
+  }
+  
+  .slide:nth-of-type(2) {
+    background: url('./img/PAfrique/p2.jpg') no-repeat center center/cover;
+
+  }
+  
+  .slide:nth-of-type(3) {
+    background: url('./img/PAfrique/p3.jpg') no-repeat center center/cover;
+
+  }
+  
+  .slide:nth-of-type(4) {
+    background: url('./img/PAfrique/p4.jpg') no-repeat center center/cover;
+    
+  }
+  .slide:nth-of-type(5) {
+    background: url('./img/PAfrique/p5.jpg') no-repeat center center/cover;
+    
+  }
+  .slide:nth-of-type(6) {
+    background: url('./img/PAfrique/p6.jpg') no-repeat center center/cover;
+    
+  }
+  .slide:nth-of-type(7) {
+    background: url('./img/PAfrique/p7.jpg') no-repeat center center/cover;
+    
+  }
+  
+  .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  
+  a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide_btn.active, .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+    
+  }
+  
+  .directional_nav {
+    height: 540px;
+    margin: 0 auto;
+    /* max-width: 1100px; */
+    position: relative;
+    top: -600px;
+  }
+  
+  .previous_btn {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity:1;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+    ;
+  }
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+  svg{
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+}
+/**/
 .showcase{
     background: #333;
     color: #fff;
@@ -89,7 +223,8 @@ body{
     justify-content: center;
     margin-left: 12rem;
     margin-top: 7rem;
-    height: 110px;
+    margin-bottom: 2rem;
+    height: 80px;
     transform: translate(-50%, -50%);
     width: 600px;
 }
@@ -103,7 +238,8 @@ body{
 }
 
 .left i{
-    font-size: 52px;
+    font-size: 44px;
+    margin-left: 2rem;
 }
 .right{
     margin-bottom: 19px;
@@ -153,12 +289,12 @@ body{
     width: 50%;
 }
 .theTitle p{
-    margin: 0;
+    margin: 1.2rem 0 0 0 ;
     padding: 0;
     font-family: 'Lato',sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.7;
     vertical-align: middle;
     display: flex;
     align-items: center;
@@ -234,7 +370,7 @@ body{
       align-items: center;
       width: 100%;
       padding: 0 3rem;
-      margin-top: 1rem;
+      margin-top: -30rem;
       margin-bottom: 4rem;
       font-family: 'Roboto Condensed', sans-serif;
       /* grid-gap: 0.2rem; */

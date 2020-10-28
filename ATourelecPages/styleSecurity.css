@@ -84,11 +84,14 @@ body{
      display: flex;
      flex-direction: column;
      text-align: center;
-     align-items: center;
-     justify-content: space-around;
+     align-items: stretch;
+     justify-content: start;
      transition: all 0.3s ease;
     
  }
+  .reveal-text{
+      margin-top: 1rem;
+  }
 
 
 
@@ -97,7 +100,7 @@ body{
 	padding: 30px;
 	margin: 0 auto;
 	position: relative;
-	top: 2%;
+	top: 20%;
 	font-size: 25px;
 	line-height: 1.7;
 	transform: translateY(-50%);
