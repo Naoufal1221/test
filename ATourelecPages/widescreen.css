@@ -301,7 +301,7 @@ ul{
     
 }
 
- @media(max-width:900px){
+ @media(max-width:1011px){
     #navbar{
         display: none;
     }

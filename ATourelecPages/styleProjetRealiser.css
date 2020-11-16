@@ -446,14 +446,23 @@ body{
 
  /*Responsive*/
 
-@media(max-width:1290px)
+@media(max-width:1100px)
 {
    
-
+    .buttons{
+        width: 70%;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
 
 }
 
 @media(max-width:768px){
+
+    .buttons{
+        width: 80%;
+    }
    
     .filtres{
         margin: 0;
@@ -486,6 +495,10 @@ body{
 @media(max-width:600px)
 {
 
+        .buttons{
+            width: 95%;
+            grid-template-columns: repeat(2,1fr);
+        }
    
 
     .links{
