@@ -13,8 +13,9 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    width: 100%;
+    width: 95%;
     height: 100%;
+    margin: 0 auto;
     padding-bottom: 1rem ;
 }
 
@@ -24,15 +25,21 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: #f4f4f4;
+    background: #347AB7;
+    color : #ffffff;
     margin: 0 auto;
     /* padding: 0 1rem; */
     border-bottom: #e8e8e8 1px solid;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
 
-.links a{color: #555;}
+.links a{color: #f4f4f4;}
+.links .active-red:hover{
+    transform: translate(0,-4px);
+    transition: all 0.3s ease-out ;
+}
 .links section:nth-child(2){
     display: flex;
     align-items: center;
