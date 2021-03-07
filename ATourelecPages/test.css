@@ -227,7 +227,7 @@ header{
 }
 .motPresident{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 70% 30%;
     width:calc(60%);
     height: 100%;
     justify-content: center;
