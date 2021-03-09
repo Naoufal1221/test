@@ -200,7 +200,7 @@ body{
  .projects{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  /* grid-gap: 1rem; */
+  grid-gap: 1rem;
   margin-left: 1.5rem;
   font-family: 'Roboto Condensed', sans-serif ;
 }
@@ -368,7 +368,8 @@ width: 63px;
   margin-left: 1.5rem;
 }
 
-.info-right p{
+.info-right p,
+.info-left p{
   margin-right: 1.5rem;
   text-align: start;
   align-self: center;
@@ -611,6 +612,7 @@ width: 63px;
     margin-bottom: 0;
   }
 
+  .wrap-header{font-size: 2rem;}
   .reveal-text{
     font-size: 2rem;
   }
@@ -627,6 +629,11 @@ width: 63px;
     width: 200px;
     text-align: center;
     display: block;
+  }
+
+  .links i{
+    align-self: center;
+    margin-bottom: 0.7rem;
   }
 
   

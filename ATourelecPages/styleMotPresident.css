@@ -87,7 +87,7 @@ h1,h2,h3,h4{
 }
 .showcase::before{
     content: '';
-    background: url(./img/Mot\ du\ president.PNG) no-repeat center/cover  ;
+    background: url(./img/Mot\ du\ president.PNG) no-repeat center center/cover  ;
     position: absolute;
     top: 0;
     left: 0;
@@ -395,6 +395,36 @@ h1,h2,h3,h4{
     .boxes{
         grid-template-columns: 1fr;
     }
+ }
+
+ @media(max-width:450px){
+     .reveal-text{
+         font-size: 2rem;
+         margin-bottom: 3rem;
+     }
+     .president-ground{
+         padding: 2rem 0;
+         margin-bottom: 2rem;
+     }
+
+     .president-ground .text-president{
+         padding: 0;
+         margin-bottom: 2rem;
+     }
+     .showcase,
+     .showcase::before{
+         max-width: 411px;
+         width: 100%;
+     }
+     .inner-showcase,
+     .inner-showcase::before{
+        height: 100vh;
+     }
+     .title-pres{
+         width: 60%;
+         margin: 0 auto 2rem auto;
+         font-size: 20px !important;
+     }
  }
 
 

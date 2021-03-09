@@ -56,19 +56,26 @@ body{
     height: 100vh;
    
 }
-.showcase::before{
+.showcase::before,
+.showcase-env::before{
     content: '';
-    background: url(./img/pexels-life-of-pix-4291.jpg) no-repeat center center/cover;
+ 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     opacity: 0.2;
-    
 }
 
- .showcase .showcase-container{
+.showcase::before{
+    background: url(./img/pexels-life-of-pix-4291.jpg) no-repeat center center/cover;
+}
+
+
+
+ .showcase .showcase-container,
+ .showcase-env .showcase-container-env{
     width: 100%;
     height: 100%;
     display: flex;
@@ -78,7 +85,8 @@ body{
     z-index: 1;
  }
 
- .showcase .showcase-container .showcase-content{
+ .showcase .showcase-container .showcase-content,
+ .showcase-env .showcase-container-env .showcase-content-env{
      width: 80%;
      height: 100%;
      display: flex;
